@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 className={"text-red-400 text-center"}>
           Welcome to <a href="https://github.com/michojekunle" target="_blank" rel="noreferrer"> Michael </a> Portfolio!
         </h1>
       </main>
