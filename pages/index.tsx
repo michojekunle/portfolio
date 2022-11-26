@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -8,15 +9,29 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>AMD || Portfolio</title>
-        <meta name="description" content="A personal Website for AMD" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={"text-red-400 text-center"}>
-          Welcome to <a href="https://github.com/michojekunle" target="_blank" rel="noreferrer"> Michael </a> Portfolio!
-        </h1>
-      </main>
+      {/* Header Section */}
+      <Header/>
+
+
+      {/* Hero Section */}
+
+
+      {/* About Section */}
+
+
+      {/* Experience Section */}
+
+
+      {/* Skills */}
+
+
+      {/* Projects */}
+
+
+      {/* Contact Me */}
+
     </div>
   )
 }
