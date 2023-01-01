@@ -10,23 +10,23 @@ const Header = () => {
       <div>
         <SocialIcon 
           url='https://github.com/michojekunle'
-          fgColor='grey'
-          bgColor='yellow'
+          // fgColor='grey'
+          // bgColor='yellow'
         />
         <SocialIcon 
-          url='https://github.com/michojekunle'
-          fgColor='grey'
-          bgColor='yellow'
+          url='https://www.instagram.com/amd_mich/'
+          // fgColor='grey'
+          // bgColor='yellow'
         />
         <SocialIcon 
-          url='https://github.com/michojekunle'
-          fgColor='grey'
-          bgColor='yellow'
+          url='https://twitter.com/MichaelOjekunl2'
+          // fgColor='grey'
+          // bgColor='yellow'
         />
         <SocialIcon 
-          url='https://github.com/michojekunle'
-          fgColor='grey'
-          bgColor='yellow'
+          url='https://www.linkedin.com/in/michael-ojekunle-651a8a232/'
+          // fgColor='grey'
+          // bgColor='yellow'
         />
       </div>
     </header>
