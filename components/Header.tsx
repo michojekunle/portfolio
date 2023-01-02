@@ -1,13 +1,28 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons'  //Impotring Rect-Social-Icons
+import { motion } from "framer-motion" // Importing Framer motion
 
 type Props = {}
 
 const Header = () => {
   return (
-    <header className='flex flex-row items-center justify-between bg-[#eee] p-[20px]'>
+    <header className='sticky top-0 flex flex-row items-start justify-between p-5 mx-auto max-w-7xl xl:item-center z-20'>
       {/* Social Icons */}
-      <div>
+      <motion.div 
+        initial ={{
+          x: -500,
+          opacity: 0,
+          scale: 0.5
+        }}
+        animate={{
+          x:0,
+          opacity: 1,
+          scale: 1
+        }}
+        transition={{
+          duration: 1.5
+        }}
+      >
         <SocialIcon 
           url='https://github.com/michojekunle'
           fgColor='grey'
@@ -28,8 +43,23 @@ const Header = () => {
           fgColor='grey'
           bgColor='transparent'
         />
-      </div>
-      <div className='flex flex-row cursor-pointer items-center'>
+      </motion.div>
+      <motion.div 
+        className='flex flex-row cursor-pointer items-center'
+        initial ={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5
+        }}
+        animate={{
+          x:0,
+          opacity: 1,
+          scale: 1
+        }}
+        transition={{
+          duration: 1.5
+        }}
+      >
         <SocialIcon 
           className='cursor-pointer'
           network='email'
@@ -37,7 +67,7 @@ const Header = () => {
           bgColor='transparent'
         />
           <p className='uppercase sm:flex hidden text-sm text-gray-100'>Get In Touch</p>
-      </div>
+      </motion.div>
     </header>
   )
 }
