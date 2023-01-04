@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -34,10 +35,16 @@ const Hero = (props: Props) => {
         />
         <div>
             <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]' >Software Engineer</h2>
-            <h1>
-                <span>{text}</span>
+            <h1 className="text-5xl lg:text-6xl font-semibold px-10 text-centrrrrrrrrrrrrrrrrer max-w-[550px]">
+                <span className="mt-3">{text}</span>
                 <Cursor cursorColor="#F7A52A"/>
             </h1>
+        </div>
+        <div className="pt-5 z-10">
+            <Link href='#about'><button className='heroButtons'>About</button></Link>
+            <Link href='#experience'><button className='heroButtons'>Experience</button></Link>
+            <Link href='#skills'><button className='heroButtons'>Skills</button></Link>
+            <Link href='#projects'><button className='heroButtons'>Projects</button></Link>
         </div>
     </div>
   )
