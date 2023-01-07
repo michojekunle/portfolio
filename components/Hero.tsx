@@ -35,7 +35,7 @@ const Hero = (props: Props) => {
         />
         <div>
             <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]' >Software Engineer</h2>
-            <h1 className="text-5xl lg:text-6xl font-semibold px-10 text-centrrrrrrrrrrrrrrrrer max-w-[550px]">
+            <h1 className="text-5xl lg:text-6xl font-semibold px-10 text-center max-w-[550px]">
                 <span className="mt-3">{text}</span>
                 <Cursor cursorColor="#F7A52A"/>
             </h1>
