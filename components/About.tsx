@@ -21,12 +21,12 @@ const About = (props: Props) => {
               x: 0,
               opacity: 1
           }}
-          viewport={{once: true}}
+          // viewport={{once: true}}
         >
           <img 
-            src="https://www.linkpicture.com/q/Snapchat-1769588424.jpg"
+            // className='mb-0 md:mb-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] border-2'
+            src="https://unsplash.com/photos/LXI5kqCdEcE"
             alt="AMD'S IMAGE"
-            className='mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'
           />
         </motion.div>
     </div>
