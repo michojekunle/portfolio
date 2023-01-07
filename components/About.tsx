@@ -11,16 +11,17 @@ const About = (props: Props) => {
             About
         </h3>
         
-        <div
-           
-          className="relative rounded-full mx-auto border object-cover w-[120px] h-[120px]"                 
-        >
+        <div className="relative rounded-full mx-auto object-cover w-[120px] h-[120px] overflow-hidden">
           <Image 
-              src="https://www.linkpicture.com/q/Snapchat-1769588424.jpg" 
+              src="https://images.unsplash.com/photo-1672923949373-8d078081e8bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" 
               alt="AMD'S IMAGE"
               layout='fill'
           />
         </div>
+        <div>
+          <h4 className='text-4xl font-semibold'>Here is a Little Background</h4>
+        </div>
+
     </div>
   )
 }
