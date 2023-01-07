@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
+import fvc from '../public/favicon.ico'
 
 type Props = {}
 
@@ -19,20 +20,16 @@ const Hero = (props: Props) => {
   return (
     <div className='h-screen flex flex-col justify-center items-center space-y-8 overflow-hidden text-center'>
         <BackgroundCircles/>
-        <Image 
-            className="relative rounded-full mx-auto border"
-            src="https://avatars.githubusercontent.com/u/90222287?v=4"
-            alt="AMD'S IMAGE"
-            width="32"
-            height="32"
-            layout='responsive'
-        />
+        <div 
+            className="relative rounded-full mx-auto object-cover top-5 w-32 h-32"        
+        >
+            <Image 
+                src="https://lh3.googleusercontent.com/a/AEdFTp6XqeUUuwvuJAjAF9m7j0EJ4un74cbbkOY0Vu0zoA=s96-c-rg-br100" 
+                alt="AMD'S IMAGE"
+                layout='fill'
+            />
+        </div>
 
-        <img 
-            className="relative rounded-full mx-auto h-32 w-32 object-cover"
-            src="https://lh3.googleusercontent.com/a/AEdFTp6XqeUUuwvuJAjAF9m7j0EJ4un74cbbkOY0Vu0zoA=s96-c-rg-br100" 
-            alt="AMD'S IMAGE" 
-        />
         <div>
             <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]' >Software Engineer</h2>
             <h1 className="text-5xl lg:text-6xl font-semibold px-10 text-center max-w-[550px]">
