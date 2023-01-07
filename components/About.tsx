@@ -16,7 +16,7 @@ const About = (props: Props) => {
           className="relative rounded-full mx-auto border object-cover w-[120px] h-[120px]"                 
         >
           <Image 
-              src="https://lh3.googleusercontent.com/a/AEdFTp6XqeUUuwvuJAjAF9m7j0EJ4un74cbbkOY0Vu0zoA=s96-c-rg-br100" 
+              src="https://www.linkpicture.com/q/Snapchat-1769588424.jpg" 
               alt="AMD'S IMAGE"
               layout='fill'
           />
