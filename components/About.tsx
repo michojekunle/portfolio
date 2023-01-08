@@ -11,15 +11,17 @@ const About = (props: Props) => {
             About
         </h3>
         
-        <div className="relative rounded-full mx-auto object-cover w-[120px] h-[120px] overflow-hidden">
+        <div className="relative -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] object-cover overflow-hidden">
           <Image 
               src="https://images.unsplash.com/photo-1672923949373-8d078081e8bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" 
               alt="AMD'S IMAGE"
               layout='fill'
           />
         </div>
-        <div>
-          <h4 className='text-4xl font-semibold'>Here is a Little Background</h4>
+        <div className='space-y-10 px-0 md:px-10'>
+          <h4 className='text-4xl font-semibold'>
+            Here is a <span className='underline decoration-[#]'>Little</span> Background
+          </h4>
         </div>
 
     </div>
