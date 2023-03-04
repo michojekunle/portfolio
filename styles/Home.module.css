@@ -1,3 +1,7 @@
+html {
+  scroll-behaviour: smooth;
+}
+
 .container {
   padding: 0 2rem;
 }
