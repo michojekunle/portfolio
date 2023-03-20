@@ -51,6 +51,7 @@ const About = (props: Props) => {
             opacity: 1,
             x: 0
           }}
+          viewport={{once: true }}
           className='space-y-10 px-0 md:px-10'
         >
           <h4 className='text-4xl font-semibold'>
