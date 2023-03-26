@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import ExperienceCard from './ExperienceCard';
 
 type Props = {}
 
@@ -9,9 +11,26 @@ const WorkExperience = (props: Props) => {
             Experience
         </h3>
 
-        <div className=''>
-
-        </div>
+        <motion.div 
+             initial={{
+                x: -200,
+                opacity: 0
+              }}
+              transition={{
+                duration: 1.2
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0
+              }}
+              viewport={{once: true }}
+            className=''
+        >
+            <ExperienceCard/>
+            <ExperienceCard/>
+            <ExperienceCard/>
+            <ExperienceCard/>
+        </motion.div>
     </div>
   )
 }

@@ -39,7 +39,7 @@ const Header = () => {
           bgColor='transparent'
         />
         <SocialIcon 
-          url='https://www.linkedin.com/in/michael-ojekunle-651a8a232/'
+          url='https://www.linkedin.com/in/michael-ojekunle/'
           fgColor='grey'
           bgColor='transparent'
         />

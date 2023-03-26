@@ -20,15 +20,11 @@ const Hero = (props: Props) => {
   return (
     <div className='h-screen flex flex-col justify-center items-center space-y-8 overflow-hidden text-center'>
         <BackgroundCircles/>
-        <div 
+        <img
+            src="https://lh3.googleusercontent.com/a/AEdFTp6XqeUUuwvuJAjAF9m7j0EJ4un74cbbkOY0Vu0zoA=s96-c-rg-br100" 
+            alt="AMD'S IMAGE"
             className="relative rounded-full mx-auto object-cover top-5 w-32 h-32"        
-        >
-            <Image 
-                src="https://lh3.googleusercontent.com/a/AEdFTp6XqeUUuwvuJAjAF9m7j0EJ4un74cbbkOY0Vu0zoA=s96-c-rg-br100" 
-                alt="AMD'S IMAGE"
-                layout='fill'
-            />
-        </div>
+        />
 
         <div>
             <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]' >Software Engineer</h2>
