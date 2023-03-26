@@ -5,11 +5,11 @@ type Props = {}
 
 const cv = (props: Props) => {
   return (
-    <div className='bg-white p-10'>
+    <div className='bg-white p-10 max-w-[2000px] mx-auto'>
         <Head>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=DM+Sans&family=Libre+Franklin&family=Poppins&display=swap" rel="stylesheet"/>
             <title>AMD || Resume</title>
         </Head>
         <header className="h-[300px] w-full bg-[#00A390] flex flex-col items-center justify-center gap-[40px]" >
@@ -17,8 +17,8 @@ const cv = (props: Props) => {
             <div className='w-[150px] bg-white rounded-md h-[0.5px]'></div>
             <h2 className='tracking-[5px] text-[24px] font-bold text-white uppercase' >FRONT END DEVELOPER</h2>
         </header>
-        <section className='flex flex-row items-sta rt w-full font-custom'>
-            <div className="el p-10 flex-1">
+        <section className="flex flex-row items-start w-full">
+            <div className="el p-10 flex-1 font['Poppins']">
                 <div className="experience">
                     <h2 className="text-[#00A390] font-medium text-[32px] tracking-widest">EXPERIENCE</h2>
                     <div className="mt-8">
@@ -68,7 +68,7 @@ const cv = (props: Props) => {
                 </div>
             </div>
             
-            <div className="ccs w-[40%] bg-[#eee] h-[95vh] p-10">
+            <div className="ccs w-[40%] bg-[#eee] h-[90vh] p-10 font-['Alkatra']">
                 <div className="contact">
                     <h2 className='text-[#00A390] font-medium text-[32px] tracking-widest uppercase'>Contact</h2>
                     <div>
@@ -99,7 +99,7 @@ const cv = (props: Props) => {
                 <div className="skills mt-[60px]">
                     <h2 className='text-[#00A390] font-medium text-[32px] tracking-widest uppercase'>skills</h2>
                     <ul className='px-[60px] py-[20px] list-disc'>
-                        <li className="text-[28px] my-[10px]">Web Technologies: ReactJS, NextJS, Tailwindcss</li>
+                        <li className="text-[28px] my-[10px]">Web Technologies: ReactJS, NextJS</li>
                         <li className="text-[28px] my-[10px]">Software Best Practices</li>
                         <li className="text-[28px] my-[10px]">Usability Understanding</li>
                         <li className="text-[28px] my-[10px]">System Maintenance</li>
