@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'custom': 'Alkatra, cursive',
+      'custom': ['"Alkatra"', '"cursive"'],
     },
     extend: {},
   },
