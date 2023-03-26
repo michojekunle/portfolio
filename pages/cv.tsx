@@ -1,19 +1,23 @@
-import type { NextPage } from 'next';
-import { SocialIcon } from 'react-social-icons'; //imports SocialIcon from react-social-icon;
+import Head from 'next/head';
 import React from 'react';
-import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css';
 
 type Props = {}
 
 const cv = (props: Props) => {
   return (
     <div className='bg-white p-10'>
+        <Head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap" rel="stylesheet" />
+            <title>AMD || Resume</title>
+        </Head>
         <header className="h-[300px] w-full bg-[#00A390] flex flex-col items-center justify-center gap-[40px]" >
             <h1 className='text-white text-lg uppercase text-[52px] tracking-widest'>Michael Ojekunle</h1>
             <div className='w-[150px] bg-white rounded-md h-[0.5px]'></div>
             <h2 className='tracking-[5px] text-[24px] font-bold text-white uppercase' >FRONT END DEVELOPER</h2>
         </header>
-        <section className='flex flex-row items-start w-full'>
+        <section className='flex flex-row items-sta rt w-full font-custom'>
             <div className="el p-10 flex-1">
                 <div className="experience">
                     <h2 className="text-[#00A390] font-medium text-[32px] tracking-widest">EXPERIENCE</h2>
@@ -64,26 +68,26 @@ const cv = (props: Props) => {
                 </div>
             </div>
             
-            <div className="ccs w-[40%] bg-[#eee] h-[75vh] p-10">
-                <div className="contact mb-11">
+            <div className="ccs w-[40%] bg-[#eee] h-[95vh] p-10">
+                <div className="contact">
                     <h2 className='text-[#00A390] font-medium text-[32px] tracking-widest uppercase'>Contact</h2>
                     <div>
-                        <div className='flex gap-4 items-center mt-8'>
-                            <p className='flex items-center justiy-center w-6 h-6 rounded-full bg-gray-400 text-[#00A390]'><i className="fas fa-phone"></i></p>
-                            <p className='text-[26px] '>michojekunle1@gmail.com</p>
+                        <div className='flex gap-4 items-center mt-11'>
+                            <p className='flex text-[18px] items-center justiy-center p-4 rounded-full bg-gray-300 text-[#00A390]'><i className="fas fa-phone"></i></p>
+                            <p className='text-[26px]'>234-904-515-6850</p>
                         </div>
-                        <div className='flex gap-4 items-center mt-8'>
-                            <p className='flex items-center justiy-center w-6 h-6 rounded-full bg-gray-400 text-[#00A390]'><i className="fas fa-envelope"></i></p>
+                        <div className='flex gap-4 items-center mt-11'>
+                            <p className='flex text-[18px] items-center justiy-center p-4 rounded-full bg-gray-300 text-[#00A390]'><i className="fas fa-envelope"></i></p>
                             <p className='text-[26px]'>michojekunle1@gmail.com</p>
                         </div>
-                        <div className='flex gap-4 items-center mt-8'>
-                            <p className='flex items-center justiy-center w-6 h-6 rounded-full bg-gray-400 text-[#00A390]'><i className="fas fa-address-card"></i></p>
+                        <div className='flex gap-4 items-center mt-11'>
+                            <p className='flex text-[18px] items-center justiy-center p-4 rounded-full bg-gray-300 text-[#00A390]'><i className="fas fa-map-marker"></i></p>
                             <p className='text-[26px]'>Lagos, Nigeria</p>
                         </div>
 
                     </div>
                 </div>
-                <div className="career-obj mt-4">
+                <div className="career-obj mt-[60px]">
                     <h2 className='text-[#00A390] font-medium text-[32px] tracking-widest uppercase'>Career objective</h2>
                     <p className='text-[30px] mt-8'>
                         A driven and detail-oriented individual with a desire to use analytical and problem-solving skills
@@ -92,16 +96,16 @@ const cv = (props: Props) => {
                         contribute to team success.
                     </p>
                 </div>
-                <div className="skills">
+                <div className="skills mt-[60px]">
                     <h2 className='text-[#00A390] font-medium text-[32px] tracking-widest uppercase'>skills</h2>
                     <ul className='px-[60px] py-[20px] list-disc'>
-                        <li className="text-[24px] my-[10px]">Web Technologies: ReactJS, NextJS, Tailwindcss</li>
-                        <li className="text-[24px] my-[10px]">Software Best Practices</li>
-                        <li className="text-[24px] my-[10px]">Usability Understanding</li>
-                        <li className="text-[24px] my-[10px]">System Maintenance</li>
-                        <li className="text-[24px] my-[10px]">Web Architectture</li>
-                        <li className="text-[24px] my-[10px]">Team Collaboration</li>
-                        <li className="text-[24px] my-[10px]">Verbal and Written Communication</li>
+                        <li className="text-[28px] my-[10px]">Web Technologies: ReactJS, NextJS, Tailwindcss</li>
+                        <li className="text-[28px] my-[10px]">Software Best Practices</li>
+                        <li className="text-[28px] my-[10px]">Usability Understanding</li>
+                        <li className="text-[28px] my-[10px]">System Maintenance</li>
+                        <li className="text-[28px] my-[10px]">Web Architectture</li>
+                        <li className="text-[28px] my-[10px]">Team Collaboration</li>
+                        <li className="text-[28px] my-[10px]">Verbal and Written Communication</li>
                     </ul>
                 </div>
             </div>
