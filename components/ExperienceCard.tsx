@@ -16,6 +16,24 @@ const ExperienceCard = (props: Props) => {
             alt='Image Illustration'
             className='w-22 h-22 object-center object-cover rounded-full xl:w-[200px] xl:h-[200px]'
         /> 
+        <div className='px-0 md:px-10'>
+          <h4 className='text-4xl'>CEO PapaFam</h4>
+          <p className='font-bold text-2xl mt-1'>PapaFam</p>
+          <div className='flex space-x-2 my-2'>
+            {/*Tech Used  */}
+            {/*Tech Used  */}
+            {/*Tech Used  */}
+            {/*Tech Used  */}
+          </div>
+          <p>Started Work ... - Ended ...</p>
+          <ul className='list-disc space-y-5 ml-5 text-lg'>
+            <li>Summary Points</li>
+            <li>Summary Points</li>
+            <li>Summary Points</li>
+            <li>Summary Points</li>
+            <li>Summary Points</li>
+          </ul>
+        </div>
     </article>
   )
 }
