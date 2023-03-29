@@ -24,7 +24,7 @@ const ExperienceCard = (props: Props) => {
             {/*Tech Used  */}
             {/*Tech Used  */}
             {/*Tech Used  */}
-          </div>
+          </div> 
           <p className=''>Started Work ... - Ended ...</p>
           <ul className='list-disc space-y-5 ml-5 text-lg'>
             <li>Summary Points</li>
