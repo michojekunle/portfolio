@@ -19,13 +19,13 @@ const ExperienceCard = (props: Props) => {
         <div className='px-0 md:px-10'>
           <h4 className='text-4xl'>CEO PapaFam</h4>
           <p className='font-bold text-2xl mt-1'>PapaFam</p>
-          <div className='flex space-x-2 my-2'>
+          <div className='flex space-x-2 my-5'>
             {/*Tech Used  */}
             {/*Tech Used  */}
             {/*Tech Used  */}
             {/*Tech Used  */}
           </div>
-          <p>Started Work ... - Ended ...</p>
+          <p className=''>Started Work ... - Ended ...</p>
           <ul className='list-disc space-y-5 ml-5 text-lg'>
             <li>Summary Points</li>
             <li>Summary Points</li>
