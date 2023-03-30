@@ -6,7 +6,7 @@ type Props = {}
 
 const ExperienceCard = (props: Props) => {
   return (
-    <article>
+    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px]'>
         <motion.img 
             initial={{ y: -200, opacity: 0 }}
             transition={{ duration: 1.2}}
@@ -25,7 +25,7 @@ const ExperienceCard = (props: Props) => {
             {/*Tech Used  */}
             {/*Tech Used  */}
           </div> 
-          <p className=''>Started Work ... - Ended ...</p>
+          <p className='upercase py-5 text-gray-300'>Started Work ... - Ended ...</p>
           <ul className='list-disc space-y-5 ml-5 text-lg'>
             <li>Summary Points</li>
             <li>Summary Points</li>
