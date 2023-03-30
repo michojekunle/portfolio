@@ -6,7 +6,7 @@ type Props = {}
 
 const ExperienceCard = (props: Props) => {
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px]'>
+    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#242424] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200'>
         <motion.img 
             initial={{ y: -200, opacity: 0 }}
             transition={{ duration: 1.2}}
@@ -27,11 +27,11 @@ const ExperienceCard = (props: Props) => {
           </div> 
           <p className='upercase py-5 text-gray-300'>Started Work ... - Ended ...</p>
           <ul className='list-disc space-y-5 ml-5 text-lg'>
-            <li>Summary Points</li>
-            <li>Summary Points</li>
-            <li>Summary Points</li>
-            <li>Summary Points</li>
-            <li>Summary Points</li>
+            <li>Summary Points Summary Points Summary Points Summary Points</li>
+            <li>Summary Points Summary Points Summary Points Summary Points</li>
+            <li>Summary Points Summary Points Summary Points Summary Points</li>
+            <li>Summary Points Summary Points Summary Points Summary Points</li>
+            <li>Summary Points Summary Points Summary Points Summary Points</li>
           </ul>
         </div>
     </article>
