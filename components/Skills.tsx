@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Skill from './Skill'
 
 type Props = {}
 
@@ -11,7 +12,22 @@ const Skills = (props: Props) => {
       </h3>
       <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm text-center'>Hover over a skill for current proficiency</h3>    
       <div className='grid grid-cols-4 gap-5'>
-        <Skill/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={false}/>
+        <Skill directionLeft={true}/>
+        <Skill directionLeft={true}/>
+        <Skill directionLeft={true}/>
+        <Skill directionLeft={true}/>
+        <Skill directionLeft={true}/>
+        <Skill directionLeft={true}/>
+        <Skill directionLeft={true}/>
+        <Skill directionLeft={true}/>   
       </div>
     </motion.div>
   )
