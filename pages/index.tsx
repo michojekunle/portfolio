@@ -8,6 +8,8 @@ import styles from '../styles/Home.module.css'
 import WorkExperience from '../components/WorkExperience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+
 
 const Home: NextPage = () => {
    
@@ -42,11 +44,14 @@ const Home: NextPage = () => {
       </section>
 
       {/* Projects */}
-      <section id='projects' className='snap-center'>
+      <section id='projects' className='snap-start'>
         <Projects/>
       </section>
 
       {/* Contact Me */}
+      <section>
+        <Contact/>
+      </section>
 
     </div>
   )
