@@ -49,7 +49,7 @@ const Home: NextPage = () => {
       </section>
 
       {/* Contact Me */}
-      <section>
+      <section id='contact' className='snap-center'>
         <Contact/>
       </section>
 
