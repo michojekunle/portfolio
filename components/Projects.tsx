@@ -5,7 +5,7 @@ type Props = {}
 const Projects = (props: Props) => {
   const projects = [1, 2, 3, 4, 5]; 
   return (
-    <div className='min-h-screen relative'>
+    <div className='min-h-screen relative flex items-center justify-center'>
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
         Projects
       </h3>
