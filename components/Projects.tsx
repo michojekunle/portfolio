@@ -32,7 +32,7 @@ const Projects = (props: Props) => {
           </div>
         ))}
       </div>
-      <div className="w-full absolute top-[30px]bg-[#F7ABBA]/10 left-0 h-[500px] -skew-y-12" />
+      <div className="w-full absolute top-[30px] bg-[#F7ABBA]/10 left-0 h-[500px] -skew-y-12" />
     </div>
   )
 }
