@@ -21,7 +21,7 @@ const Projects = (props: Props) => {
               <h4 className='text-4xl font-semibold'>
                 <span className='underline decoration-[#F7ABBA]/50 '>Case Study {idx + 1} of {projects.length}</span>: UPS CLONE 
               </h4>
-              <p>
+              <p className='text-lg text-center md:text-left'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque 
                 dicta quis cupiditate. Voluptatibus fugiat eum quo aperiam asperiores 
                 sint pariatur accusantium perspiciatis dicta, unde alias praesentium 
