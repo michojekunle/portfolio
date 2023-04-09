@@ -16,7 +16,9 @@ function Contact({}: Props) {
     register,
     handleSubmit 
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = formData => {
+    window.location.href = `mailto:michojekunle1@gmail.com?subject=${formData.subject}&body=Hi my Name is ${formData.name}, ${formData.message} [${formData.email}]`
+  }
 
   return (
     <div className='min-h-screen relative flex flex-col text-center md:text-left max-w-7xl md:flex-row px-10 justify-evenly mx-auto items-center'>
@@ -44,13 +46,13 @@ function Contact({}: Props) {
               <p className='text-2xl'>Yaba, Lagos Nigeria.</p>
             </div>
           </div>
-          <form className='flex flex-col space-y-2 w-fit mx-auto'>
+          <form className='flex flex-col space-y-2 w-fit mx-auto' onSubmit={handleSubmit(onSubmit)}>
             <div className='flex space-x-2'>
-              <input className='contactInput' placeholder='Name' type="text" />
-              <input className='contactInput' placeholder='Email' type="email" />
+              <input {...register('name')} className='contactInput' placeholder='Name' type="text" />
+              <input {...register('email')} className='contactInput' placeholder='Email' type="email" />
             </div>
-            <input className='contactInput' placeholder='Subject' type="text" />
-            <textarea placeholder='Message'/>
+            <input {...register('subject')} className='contactInput' placeholder='Subject' type="text" />
+            <textarea {...register('message')} placeholder='Message'/>
             <button type='submit' className='text-lg py-5 px-10 rounded-md text-black font-bold bg-[#F7ABBA]'>Submit</button>
           </form>
         </div>
