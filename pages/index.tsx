@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Header from '../components/Header'
 import About from '../components/About'
 import Hero from '../components/Hero'
@@ -14,9 +15,10 @@ import Contact from '../components/Contact'
 const Home: NextPage = () => {
    
   return (
-    <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-scroll ">
+    <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A38A]/80">
       <Head>
         <title>AMD || Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </Head>
 
       <Header/>
@@ -52,6 +54,14 @@ const Home: NextPage = () => {
       <section id='contact' className='snap-start'>
         <Contact/>
       </section>
+
+      <Link href='#hero'>
+        <footer className=''>
+          <div className="rounded-full w-52 h-52 flex items-center justify-center text-white bg-slate-400">
+            <i className="fas fa-arrow-up animate-ping"></i>
+          </div>
+        </footer>
+      </Link>
 
     </div>
   )

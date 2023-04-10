@@ -10,7 +10,7 @@ const Projects = (props: Props) => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 1.5}}
-      className='min-h-screen relative flex items-center justify-center'
+      className='min-h-screen relative flex items-center justify-center scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A38A]/80'
     >
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
         Projects
