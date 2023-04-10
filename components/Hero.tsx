@@ -23,7 +23,7 @@ const Hero = (props: Props) => {
         <img
             src="https://lh3.googleusercontent.com/a/AEdFTp6XqeUUuwvuJAjAF9m7j0EJ4un74cbbkOY0Vu0zoA=s96-c-rg-br100" 
             alt="AMD'S IMAGE"
-            className="relative rounded-full mx-auto object-cover top-5 w-32 h-32"        
+            className="relative rounded-full mx-auto object-cover w-32 h-32"        
         />
 
         <div>

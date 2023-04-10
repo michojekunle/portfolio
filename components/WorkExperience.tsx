@@ -24,7 +24,7 @@ const WorkExperience = (props: Props) => {
                 x: 0
               }}
               viewport={{once: true }}
-            className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A38A]/80'
+            className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80'
         >
             <ExperienceCard/>
             <ExperienceCard/>
