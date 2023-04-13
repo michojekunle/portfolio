@@ -1,11 +1,11 @@
 export default {
-  name: 'pageInfo',
-  title: 'PageInfo',
+  name: 'experience',
+  title: 'Experience',
   type: 'document',
   fields: [
     {
-      name: "name",
-      title: "Name",
+      name: "jo",
+      title: "Title",
       type: "string"
     },
     {
