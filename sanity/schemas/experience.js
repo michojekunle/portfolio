@@ -44,7 +44,7 @@ export default {
     },
     {
       name: "points",
-      titl: "Pointa",
+      titl: "Points",
       type: "array",
       of: [{ type: "string "}],
     }
