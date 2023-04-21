@@ -6,56 +6,34 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: "name",
-      title: "Name",
+      name: "title",
+      title: "Title",
+      description: "Title of the project",
       type: "string"
     }),
     defineField({
-      name: 'role',
-      title: "Role",
-      type: "string"
-    }),
-    defineField({
-      name: 'heroImage',
-      title: 'Hero image',
+      name: 'image',
+      title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: "backgroundInformation",
-      title: "BackgroundInformation",
-      type: "string"
+      name: "summary",
+      title: "Summary",
+      type: "text"
     }),
     defineField({
-      name: "profilePic",
-      title: "ProfilePic",
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    }),
-    defineField({
-      name: "phoneNumber",
-      title: "PhoneNumber",
-      type: "string"
-    }),
-    defineField({
-      name: "email",
-      title: "Email",
-      type: "string"
-    }),
-    defineField({
-      name: "address",
-      title: "Address",
-      type: "string"
-    }),
-    defineField({
-      name: "socials",
-      title: "Socials",
+      name: "technologies",
+      title: "Technologies",
       type: "array",
-      of: [{type: "reference", to: {type: "social" } }]
+      of: [{type: "reference", to: {type: "skill" } }]
+    }),
+    defineField({
+      name: "linkToBuild",
+      title: "LinkToBuild",
+      type: "url"
     }),
   ],
 })
