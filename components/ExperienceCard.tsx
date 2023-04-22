@@ -14,7 +14,7 @@ const ExperienceCard = (props: Props) => {
             viewport={{once: true }}
             src ='https://images.unsplash.com/photo-1672923949373-8d078081e8bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60'
             alt='Image Illustration'
-            className='w-22 h-22 object-center object-cover rounded-full xl:w-[200px] xl:h-[200px]'
+            className='w-[80px] h-[80px] object-center object-cover rounded-full xl:w-[200px] xl:h-[200px]'
         /> 
         <div className='px-0 md:px-10'>
           <h4 className='text-4xl'>CEO PapaFam</h4>

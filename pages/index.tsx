@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <section id='hero' className='snap-start'>
         <Hero/>
       </section>
-
+d
 
       {/* About Section */}
       <section id='about' className='snap-center'>
@@ -57,8 +57,8 @@ const Home: NextPage = () => {
 
       <Link href='#hero'>
         <footer className='sticky bottom-5 w-full  flex items-center justify-center'>
-          <div className="rounded-full w-28 h-28 flex items-center justify-center animate-pulse  text-[#f7a52a] bg-slate-700/50">
-            <i className="fas fa-arrow-up text-4xl"></i>
+          <div className="rounded-full w-[45px] h-[45px] flex items-center justify-center animate-pulse  text-[#f7a52a] bg-slate-700/50">
+            <i className="fas fa-arrow-up text-[16px] mt-[5px]"></i>
           </div>
         </footer>
       </Link>
