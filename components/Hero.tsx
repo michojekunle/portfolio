@@ -4,8 +4,11 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
 import fvc from '../public/favicon.ico'
+import { PageInfo } from '../typings'
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo;
+}
 
 const Hero = (props: Props) => {
     const [text, count] = useTypewriter({
