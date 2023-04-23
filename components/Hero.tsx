@@ -5,15 +5,16 @@ import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
 import fvc from '../public/favicon.ico'
 import { PageInfo } from '../typings'
+import { urlFor } from '../sanity'
 
 type Props = {
     pageInfo: PageInfo;
 }
 
-const Hero = (props: Props) => {
+const Hero = ({ pageInfo }: Props) => {
     const [text, count] = useTypewriter({
         words: [
-            "Hi, The Name's Michael Ojekunle",
+            `Hi, The Name's ${pageInfo?.name}`,
             "Guy-who-loves-Cofee.tsx",
             "<ButLovesToCodeMore />"
         ],
@@ -24,7 +25,8 @@ const Hero = (props: Props) => {
     <div className='h-screen flex flex-col justify-center items-center space-y-8 overflow-hidden text-center'>
         <BackgroundCircles/>
         <img
-            src="https://lh3.googleusercontent.com/a/AEdFTp6XqeUUuwvuJAjAF9m7j0EJ4un74cbbkOY0Vu0zoA=s96-c-rg-br100" 
+            src={urlFor(pageInfo
+                )} 
             alt="AMD'S IMAGE"
             className="relative rounded-full mx-auto object-cover w-32 h-32"        
         />
