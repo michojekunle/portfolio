@@ -1,11 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
-import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
 import fvc from '../public/favicon.ico'
 import { PageInfo } from '../typings'
 import { urlFor } from '../sanity'
+import { Cursor } from 'react-simple-typewriter'
 
 type Props = {
     pageInfo: PageInfo;
@@ -25,8 +24,7 @@ const Hero = ({ pageInfo }: Props) => {
     <div className='h-screen flex flex-col justify-center items-center space-y-8 overflow-hidden text-center'>
         <BackgroundCircles/>
         <img
-            src={urlFor(pageInfo
-                )} 
+            src={urlFor(pageInfo.heroImage).url()}
             alt="AMD'S IMAGE"
             className="relative rounded-full mx-auto object-cover w-32 h-32"        
         />
