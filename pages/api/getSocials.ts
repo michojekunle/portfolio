@@ -14,8 +14,8 @@ type Data = {
 
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<Data>
+    res: NextApiResponse<string>
 ) {
     const socials: Social[] = await sanityClient.fetch(query)  
-    res.status(200).json({ socials })
+    res.status(200).json(JSON.stringify({ socials }))
 }

@@ -14,8 +14,8 @@ type Data = {
 
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<Data>
+    res: NextApiResponse<string>
 ) {
     const skills: Skill[] = await sanityClient.fetch(query)  
-    res.status(200).json({ skills })
+    res.status(200).json(JSON.stringify({ skills }))
 }
