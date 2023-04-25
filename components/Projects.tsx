@@ -1,10 +1,14 @@
 import React from 'react'
 import  { motion } from 'framer-motion';
+import { Project } from '../typings';
+import { urlFor } from '../sanity';
 
-type Props = {}
+type Props = {
+  projects: Project[];
+}
 
-const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5]; 
+const Projects = ({ projects }: Props) => {
+
   return (
     <motion.div
       initial={{opacity: 0}}
@@ -18,7 +22,7 @@ const Projects = (props: Props) => {
 
       <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80'>
         {projects.map((project, idx) => (
-          <div key={project} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-444 h-screen'>
+          <div key={project._id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-444 h-screen'>
             <motion.img
               initial={{
                 y: -300,
@@ -30,19 +34,15 @@ const Projects = (props: Props) => {
                 opacity: 1
               }}
               viewport={{once: true}}
-              src="https://images.unsplash.com/photo-1672923949373-8d078081e8bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" 
+              src={urlFor(project.image).url()}
               alt='image two'
+              className="max-h-[550px]
             />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold'>
-                <span className='underline decoration-[#F7A52A]/50 '>Case Study {idx + 1} of {projects.length}</span>: UPS CLONE 
+                <span className='underline decoration-[#F7A52A]/50 '>Case Study {idx + 1} of {projects.length}</span>: {project?.title} 
               </h4>
-              <p className='text-lg text-center md:text-left'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque 
-                dicta quis cupiditate. Voluptatibus fugiat eum quo aperiam asperiores 
-                sint pariatur accusantium perspiciatis dicta, unde alias praesentium 
-                laborum. Ea.
-              </p>
+              <p className='text-lg text-center md:text-left'>{project?.summary}</p>
             </div>
 
           </div>

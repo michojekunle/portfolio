@@ -1,33 +1,37 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Skill } from '../typings';
+import { urlFor } from '../sanity';
 
 type Props = {
-    directionLeft: boolean;
+    directionLeft?: boolean;
     skill: Skill;
 }
 
-const Skill = ({ directionLeft }: Props) => {
+const Skill = ({ directionLeft, skill }: Props) => {
   return (
-    <div className='group relative flex cursor-pointer'>
-        <motion.img
-            initial={{
-                x: directionLeft ? -200 : 200,
-                opacity: 0
-            }}
-            transition={{duration:1}}
-            whileInView={{opacity:1, x:0}}
-            src="https://images.unsplash.com/photo-1672923949373-8d078081e8bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60"
+    <motion.div 
+        className='group relative flex cursor-pointer'
+        initial={{
+            x: directionLeft ? -200 : 200,
+            opacity: 0
+        }}
+        transition={{duration:1}}
+        whileInView={{opacity:1, x:0}}
+    >
+        <img
+            src={urlFor(skill.image).url()}
             alt='soft work'
-            className='cursor-pointer rounded-full border border-gray-300 object-cover w-24 h-24 md:w-32 md:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
+            className='cursor-pointer rounded-full object-cover w-20 h-20 md:w-28 md:h-28 filter group-hover:grayscale transition duration-300 ease-in-out bg-slate-800'
         />
         <div className='absolute opacity-0 group-hover:opacity-80 duration-300 ease-out'>
-            <div className='flex items-center justify-center group-hover:bg-white h-24 w-24 md:w-32 md:h-32 rounded-full z-0'>
-                <p className='font-bold text-black opacity-100 text-3xl'>90%</p>
+            <div className='flex flex-col items-center justify-center group-hover:bg-slate-900 h-20 w-20 md:w-28 md:h-28 rounded-full z-0'>
+                <p className='font-medium text-gray-100 text-[10px] text-center  uppercase tracking-widest opacity-100'>{skill.title}</p>
+                <p className='font-bold text-gray-100 opacity-100 text-2xl'>{skill.progress}%</p>
             </div>
         </div>
         
-    </div>
+    </motion.div>
   )
 }
 
