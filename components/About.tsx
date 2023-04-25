@@ -9,6 +9,7 @@ type Props = {
 }
 
 const About = ({ pageInfo }: Props) => {
+
   return (
     <motion.div 
       initial={{ opacity:0 }}
@@ -61,7 +62,7 @@ const About = ({ pageInfo }: Props) => {
           <h4 className='text-4xl font-semibold'>
             Here is a <span className='underline decoration-[#f7A34a]'>Little</span> Background
           </h4>
-          <p className='text-base'>{pageInfo.backgroundInfomation}</p>
+          <p className='text-base'>{pageInfo?.backgroundInformation}</p>
         </motion.div>
 
     </motion.div>

@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Skill } from '../typings';
 
 type Props = {
-    directionLeft: boolean,
+    directionLeft: boolean;
+    skill: Skill;
 }
 
 const Skill = ({ directionLeft }: Props) => {

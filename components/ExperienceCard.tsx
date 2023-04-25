@@ -20,13 +20,13 @@ const ExperienceCard = ({ experience }: Props) => {
             className='w-[80px] h-[80px] object-center object-cover rounded-full xl:w-[200px] xl:h-[200px]'
         /> 
         <div className='px-0 md:px-10'>
-          <h4 className='text-4xl'>{experience.jobTitle} of {experience.sompany}</h4>
-          <p className='font-bold text-2xl mt-1'>{experience.sompany}</p>
+          <h4 className='text-4xl'>{experience.jobTitle}</h4>
+          <p className='font-bold text-2xl mt-1'>{experience.company}</p>
           <div className='flex space-x-2 my-5'>
             {experience.technologies.map(technology => (
               <img 
                 key={technology._id}
-                className='h-10 w-10 rounded-full'
+                className='h-10 w-10'
                 src={urlFor(technology.image).url()}
               />
             ))}
