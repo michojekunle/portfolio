@@ -36,12 +36,18 @@ const Projects = ({ projects }: Props) => {
               viewport={{once: true}}
               src={urlFor(project.image).url()}
               alt='image two'
-              className="max-h-[550px]
+              className="max-h-[550px]"
             />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold'>
                 <span className='underline decoration-[#F7A52A]/50 '>Case Study {idx + 1} of {projects.length}</span>: {project?.title} 
               </h4>
+              <div className='flex items-center space-x-2 justify-center'>
+                {project?.technologies.map(technology => (
+                  <img className='h-10 w-10' key={technology._id} src={urlFor(technology.image).url()} alt="" />
+                ))}
+              </div>
+
               <p className='text-lg text-center md:text-left'>{project?.summary}</p>
             </div>
 

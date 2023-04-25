@@ -43,8 +43,8 @@ function Contact({}: Props) {
               <p className='text-2xl'>Yaba Lagos, Nigeria.</p>
             </div>
           </div>
-          <form className='flex flex-col space-y-2 w-fit mx-auto' onSubmit={handleSubmit(onSubmit)}>
-            <div className='flex space-x-2'>
+          <form className='flex flex-col space-y-2 w-fit mx-auto items-center justify-center' onSubmit={handleSubmit(onSubmit)}>
+            <div className='flex space-x-2 '>
               <input {...register('name')} className='contactInput' placeholder='Name' type="text" />
               <input {...register('email')} className='contactInput' placeholder='Email' type="email" />
             </div>
