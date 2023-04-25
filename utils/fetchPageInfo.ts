@@ -4,9 +4,12 @@ import { BASE_URL } from './constants';
 export const fetchPageInfo = async () => {
     const res = await fetch(`${BASE_URL}/api/pageInfo`);
 
-    console.log(res);
+    console.log("Response", res);
+
     const data = await res.json();
+    
     console.log(data);
+    
     const pageInfo: PageInfo = data.pageInfo;
 
     return pageInfo;

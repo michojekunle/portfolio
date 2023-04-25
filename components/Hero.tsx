@@ -4,7 +4,7 @@ import Link from 'next/link'
 import fvc from '../public/favicon.ico'
 import { PageInfo } from '../typings'
 import { urlFor } from '../sanity'
-import { Cursor } from 'react-simple-typewriter'
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 type Props = {
     pageInfo: PageInfo;
@@ -26,11 +26,11 @@ const Hero = ({ pageInfo }: Props) => {
         <img
             src={urlFor(pageInfo.heroImage).url()}
             alt="AMD'S IMAGE"
-            className="relative rounded-full mx-auto object-cover w-32 h-32"        
+            className="relative rounded-full mx-auto object-cover w-36 h-36"        
         />
 
         <div>
-            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]' >Software Engineer</h2>
+            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]' >{pageInfo.role}</h2>
             <h1 className="text-5xl lg:text-6xl font-semibold px-10 text-center max-w-[550px]">
                 <span className="mt-3">{text}</span>
                 <Cursor cursorColor="#F7A52A"/>

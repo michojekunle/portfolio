@@ -14,8 +14,8 @@ type Data = {
 
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<string>
+    res: NextApiResponse<Data>
 ) {
     const pageInfo: PageInfo = await sanityClient.fetch(query)  
-    res.status(200).json(JSON.stringify({ pageInfo }))
+    res.status(200).json({ pageInfo })
 }

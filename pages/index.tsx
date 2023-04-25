@@ -45,13 +45,13 @@ d
 
       {/* About Section */}
       <section id='about' className='snap-center'>
-        <About/>
+        <About pageInfo={pageInfo}/>
       </section>
 
 
       {/* Experience Section */}
       <section id='experience' className='snap-center'>
-         <WorkExperience />
+         <WorkExperience experiences={experiences}/>
       </section>
 
       {/* Skills */}

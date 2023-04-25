@@ -7,7 +7,7 @@ import { Project } from '../../typings';
 const query = groq`
     *[_type == "project"] {
         ...,
-        technologies[] =>
+        technologies[] ->
     }
 `
 
@@ -17,8 +17,8 @@ type Data = {
 
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<string>
+    res: NextApiResponse<Data>
 ) {
     const projects: Project[] = await sanityClient.fetch(query)  
-    res.status(200).json(JSON.stringify({ projects }))
+    res.status(200).json({ projects })
 }
