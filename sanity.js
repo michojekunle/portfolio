@@ -1,16 +1,11 @@
 import { createClient } from 'next-sanity';
 import createImageUrlBuilder from '@sanity/image-url';
 
-interface Config {
-    dataset: string;
-    projectId: string;
-    apiVersion: string;
-    useCdn: boolean;
-}
 
-export const config: Config = {
+
+export const config = {
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "",
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
     apiVersion: "2023-04-21",
     useCdn: process.env.NEXT_ENV === "production",
 };
