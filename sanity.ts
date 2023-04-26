@@ -10,7 +10,7 @@ interface Config {
 
 export const config: Config = {
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "",
     apiVersion: "2023-04-21",
     useCdn: process.env.NEXT_ENV === "production",
 };
