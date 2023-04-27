@@ -41,13 +41,11 @@ const Home = ({ projects, skills, experiences, socials, pageInfo }: Props) => {
       <section id='hero' className='snap-start'>
         <Hero pageInfo={pageInfo}/>
       </section>
-d
 
       {/* About Section */}
       <section id='about' className='snap-center'>
         <About pageInfo={pageInfo}/>
       </section>
-
 
       {/* Experience Section */}
       <section id='experience' className='snap-center'>
@@ -66,7 +64,7 @@ d
 
       {/* Contact Me */}
       <section id='contact' className='snap-start'>
-        <Contact/>
+        <Contact pageInfo={pageInfo} />
       </section>
 
       <Link href='#hero'>
