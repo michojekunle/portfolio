@@ -29,7 +29,7 @@ type Props = {
 const Home = ({ projects, skills, experiences, socials, pageInfo }: Props) => {
    
   return (
-    <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80">
+    <div className="bg-[#242424] text-white h-screen overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80">
       <Head>
         <title>{pageInfo.name} || Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
@@ -48,33 +48,32 @@ const Home = ({ projects, skills, experiences, socials, pageInfo }: Props) => {
       </section>
 
       {/* Experience Section */}
-      <section id='experience' className='snap-center'>
+      <section id='experience' className=''>
          <WorkExperience experiences={experiences}/>
       </section>
 
       {/* Skills */}
-      <section id='skills' className='snap-start'>
+      <section id='skills' className=''>
         <Skills skills={skills}/>
       </section>
 
       {/* Projects */}
-      <section id='projects' className='snap-start'>
+      <section id='projects' className=''>
         <Projects projects={projects}/>
       </section>
 
       {/* Contact Me */}
-      <section id='contact' className='snap-start'>
+      <section id='contact' className=''>
         <Contact pageInfo={pageInfo} />
       </section>
 
-      <Link href='#hero'>
-        <footer className='sticky bottom-5 w-full  flex items-center justify-center'>
+      <footer className='sticky bottom-5 w-full flex items-center justify-center'>
+        <Link href='#hero'>
           <div className="rounded-full w-[45px] h-[45px] flex items-center justify-center animate-pulse  text-[#f7a52a] bg-slate-700/50">
             <i className="fas fa-arrow-up text-[16px] mt-[5px]"></i>
           </div>
-        </footer>
-      </Link>
-
+        </Link>
+      </footer>
     </div>
   )
 }

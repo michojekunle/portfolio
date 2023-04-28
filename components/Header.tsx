@@ -33,6 +33,7 @@ const Header = ({ socials }: Props) => {
             url={social.url}
             fgColor='grey'
             bgColor='transparent'
+            className='w-8 h-8 md:w-11 md:h-11'
           />
         ))}
       </motion.div>
@@ -55,7 +56,7 @@ const Header = ({ socials }: Props) => {
           }}
         >
           <SocialIcon 
-            className='cursor-pointer'
+            className='cursor-pointer w-8 h-8 md:w-11 md:h-11'
             network='email'
             fgColor='grey'
             bgColor='transparent'

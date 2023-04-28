@@ -35,7 +35,7 @@ const About = ({ pageInfo }: Props) => {
             x: 0
           }}
           viewport={{once: true }}
-          className="relative -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] object-cover overflow-hidden"
+          className="relative -mb-20 md:mb-0 flex-shrink-0 w-44 h-44 sm:w-56 sm:h-56 rounded-full md:rounded-lg md:w-64 md:h-92 xl:w-[500px] xl:h-[600px] object-cover overflow-hidden"
         >
           <Image 
               src={urlFor(pageInfo.profilePic).url()}

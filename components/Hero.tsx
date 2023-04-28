@@ -29,9 +29,9 @@ const Hero = ({ pageInfo }: Props) => {
             className="relative rounded-full mx-auto object-cover w-36 h-36"        
         />
 
-        <div>
-            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]' >{pageInfo.role}</h2>
-            <h1 className="text-5xl lg:text-6xl font-semibold px-10 text-center max-w-[550px]">
+        <div className='text-center'>
+            <h2 className='text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[8px] md:tracking-[15px] leading-8' >{pageInfo.role}</h2>
+            <h1 className="text-4xl z-10 md:text-5xl lg:text-6xl font-semibold px-10 text-center md:max-w-[550px]">
                 <span className="mt-3">{text}</span>
                 <Cursor cursorColor="#F7A52A"/>
             </h1>
