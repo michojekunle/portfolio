@@ -12,11 +12,8 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 
 import { PageInfo, Social, Experience, Skill, Project } from '../typings';
-import { fetchPageInfo } from '../utils/fetchPageInfo'
-import { fetchExperiences } from '../utils/fetchExperience'
-import { fetchSkills } from '../utils/fetchSkills'
-import { fetchProjects } from '../utils/fetchProjects'
-import { fetchSocials } from '../utils/fetchSocials'
+import { socials, skills, pageInfo, projects, experiences } from'../data';
+
 
 type Props = {
   pageInfo: PageInfo;
@@ -26,7 +23,7 @@ type Props = {
   socials: Social[];
 }
 
-const Home = ({ projects, skills, experiences, socials, pageInfo }: Props) => {
+const Home = () => {
    
   return (
     <div className="bg-[#242424] text-white h-screen overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80">
@@ -79,26 +76,3 @@ const Home = ({ projects, skills, experiences, socials, pageInfo }: Props) => {
 }
 
 export default Home;
-
-export const getStaticProps: GetStaticProps<Props> = async () =>
-{
-  const pageInfo: PageInfo = await fetchPageInfo();
-  const experiences: Experience[] = await fetchExperiences();  
-  const skills: Skill[] = await fetchSkills();  
-  const projects: Project[] = await fetchProjects();  
-  const socials: Social[] = await fetchSocials();  
-  
-  return {
-    props: {
-      pageInfo,
-      experiences,
-      skills,
-      projects,
-      socials
-    },
-    // Next.js will atempt to re-generate the page;
-    //  - When a request comes in
-    //  - At most once every 10 seconds
-    revalidate: 10,
-  }
-}
