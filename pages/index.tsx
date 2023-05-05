@@ -1,4 +1,3 @@
-import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 // import Image from 'next/image'
 import Link from 'next/link'
@@ -14,14 +13,6 @@ import Contact from '../components/Contact'
 import { PageInfo, Social, Experience, Skill, Project } from '../typings';
 import { socials, skills, pageInfo, projects, experiences } from'../data';
 
-
-type Props = {
-  pageInfo: PageInfo;
-  skills: Skill[];
-  projects: Project[];
-  experiences: Experience[];
-  socials: Social[];
-}
 
 const Home = () => {
    

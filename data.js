@@ -1,5 +1,5 @@
 export const pageInfo = {
-
+    
 }
 
 export const experiences = {
