@@ -1,31 +1,33 @@
+import { StaticImageData } from "next/image";
+
 export interface PageInfo {
     address: string;
     backgroundInformation: string;
     email: string;
     role: string;
-    heroImage: string;
+    heroImage: StaticImageData;
     name: string;
     phoneNumber: string;
-    profilePic: string;
+    profilePic: StaticImageData;
 }
 
 export interface Skill {
-    image: string;
+    image: StaticImageData;
     progress: number;
     title: string;
 }
 
 export interface Technology {
-    image: string;
-    progress: number;
-    title: string;
+    image: StaticImageData;
+    progress?: number;
+    title?: string;
 }
 
 export interface Experience {
     company: string;
-    companyImage: string;
-    dateStarted: Date;
-    dateEnded: Date;
+    companyImage: StaticImageData;
+    dateStarted: string;
+    dateEnded: string;
     isCurrentlyWorkingHere: boolean;
     jobTitle: string;
     points: string[];
