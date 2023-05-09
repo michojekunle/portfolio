@@ -31,9 +31,9 @@ import vscode from './public/icons/skills/vscode-original.svg';
 export const pageInfo = {
     name: "Michael Ojekunle",
     role: "Full Stack Web Developer",
-    heroImage: heroImage,
+    heroImage: profilePic,
     backgroundInformation: "Hello, My Name's Michael and I'm a Full Stack Web Developer.",
-    profilePic: profilePic,
+    profilePic: heroImage,
     phoneNumber: "+2349045156850",
     email: "michojekunle1@gmail.com",
     address: "Lagos, Nigeria",
@@ -204,9 +204,9 @@ export const skills = [
         title: "Solidity",
         progress: 40
     },
-    {
+    // {
         
-    }
+    // }
 ]
 
 export const socials = [
