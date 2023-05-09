@@ -172,7 +172,7 @@ export const skills = [
     {
         image: react,
         title: "ReactJs",
-        progrress: 85,
+        progress: 85,
     }, 
     {
         image: nodejs,
@@ -204,9 +204,6 @@ export const skills = [
         title: "Solidity",
         progress: 40
     },
-    // {
-        
-    // }
 ]
 
 export const socials = [

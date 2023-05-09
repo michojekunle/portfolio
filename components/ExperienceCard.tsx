@@ -16,24 +16,24 @@ const ExperienceCard = ({ experience }: Props) => {
           transition={{ duration: 1.2}}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{once: true }}
+          className='relative w-[80px] h-[80px] flex items-center justify-center rounded-full xl:w-[200px] xl:h-[200px]'
         >
           <Image 
               src ={experience.companyImage}
               alt='Image Illustration'
-              className='w-[80px] h-[80px] object-center object-contain rounded-full xl:w-[200px] xl:h-[200px]'
-              layout="responsive"
           /> 
         </motion.div>
         <div className='px-0 md:px-10'>
           <h4 className='text-4xl'>{experience.jobTitle}</h4>
           <p className='font-bold text-2xl mt-1'>{experience.company}</p>
-          <div className='flex space-x-2 my-5'>
+          <div className='flex space-x-5 my-5'>
             {experience.technologies.map((technology, i) => (
               <Image 
                 key={i}
                 className='h-10 w-10'
                 src={technology.image}
-                layout="responsive"
+                width={28}
+                height={28}
               />
             ))}
           </div> 
