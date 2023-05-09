@@ -15,12 +15,12 @@ const Skills = ({ skills }: Props) => {
       </h3>
       <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm text-center'>Hover over a skill for current proficiency</h3>    
       <div className='flex flex-wrap gap-5 mt-36 max-w-[320px] items-center justify-center'>
-        {skills.slice(0, skills.length/2).map(skill => (
-          <Skill key={skill._id} skill={skill}/>
+        {skills.slice(0, skills.length/2).map((skill, i) => (
+          <Skill key={i} skill={skill}/>
         ))}
 
-        {skills.slice(skills.length/2, skills.length).map(skill => (
-          <Skill key={skill._id} skill={skill} directionLeft/>
+        {skills.slice(skills.length/2, skills.length).map((skill, i) => (
+          <Skill key={i} skill={skill} directionLeft/>
         ))} 
       </div>
     </motion.div>

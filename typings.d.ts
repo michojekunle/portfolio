@@ -36,7 +36,7 @@ export interface Experience {
 
 export interface Project {
     title: string;
-    image: string;
+    image: StaticImageData;
     linkToBuild: string;
     summary: string;
     technologies: Technology[];

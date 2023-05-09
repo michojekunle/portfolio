@@ -5,6 +5,7 @@ import fvc from '../public/favicon.ico'
 import { PageInfo } from '../typings'
 import { urlFor } from '../sanity'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
+import Image from 'next/image'
 
 type Props = {
     pageInfo: PageInfo;
@@ -23,11 +24,15 @@ const Hero = ({ pageInfo }: Props) => {
   return (
     <div className='h-screen flex flex-col justify-center items-center space-y-8 overflow-hidden text-center'>
         <BackgroundCircles/>
-        <img
-            src={urlFor(pageInfo.heroImage).url()}
-            alt="AMD'S IMAGE"
-            className="relative rounded-full mx-auto object-cover w-36 h-36"        
-        />
+        
+        <div className="relative w-36 h-36">
+            <Image
+                src={pageInfo.heroImage}
+                alt="AMD'S IMAGE"
+                className="relative rounded-full mx-auto object-cover "        
+                layout="fill"
+            />
+        </div>
 
         <div className='text-center'>
             <h2 className='text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[8px] md:tracking-[15px] leading-8' >{pageInfo.role}</h2>

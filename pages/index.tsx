@@ -31,7 +31,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section id='about' className='snap-center'>
+      <section id='about' className='snap-start'>
         <About pageInfo={pageInfo}/>
       </section>
 

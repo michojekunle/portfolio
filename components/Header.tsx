@@ -27,9 +27,9 @@ const Header = ({ socials }: Props) => {
           duration: 1.5
         }}
       >
-        {socials.map((social) => (
+        {socials.map((social, i) => (
           <SocialIcon
-            key={social._id} 
+            key={i} 
             url={social.url}
             fgColor='grey'
             bgColor='transparent'

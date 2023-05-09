@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { Experience } from '../typings';
 import { urlFor } from '../sanity';
+import Image from 'next/image';
 
 type Props = {
   experience: Experience;
@@ -10,24 +11,29 @@ type Props = {
 const ExperienceCard = ({ experience }: Props) => {
   return (
     <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[320px] sm:w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#242424] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200'>
-        <motion.img 
-            initial={{ y: -200, opacity: 0 }}
-            transition={{ duration: 1.2}}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{once: true }}
-            src ={urlFor(experience.companyImage).url()}
-            alt='Image Illustration'
-            className='w-[80px] h-[80px] object-center object-contain rounded-full xl:w-[200px] xl:h-[200px]'
-        /> 
+        <motion.div
+          initial={{ y: -200, opacity: 0 }}
+          transition={{ duration: 1.2}}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{once: true }}
+        >
+          <Image 
+              src ={experience.companyImage}
+              alt='Image Illustration'
+              className='w-[80px] h-[80px] object-center object-contain rounded-full xl:w-[200px] xl:h-[200px]'
+              layout="responsive"
+          /> 
+        </motion.div>
         <div className='px-0 md:px-10'>
           <h4 className='text-4xl'>{experience.jobTitle}</h4>
           <p className='font-bold text-2xl mt-1'>{experience.company}</p>
           <div className='flex space-x-2 my-5'>
-            {experience.technologies.map(technology => (
-              <img 
-                key={technology._id}
+            {experience.technologies.map((technology, i) => (
+              <Image 
+                key={i}
                 className='h-10 w-10'
-                src={urlFor(technology.image).url()}
+                src={technology.image}
+                layout="responsive"
               />
             ))}
           </div> 
