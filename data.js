@@ -27,6 +27,10 @@ import tailwindcss from './public/icons/skills/tailwindcss-plain.svg';
 import threejs from './public/icons/skills/threejs-original.svg';
 import typescript from './public/icons/skills/typescript-original.svg';
 import vscode from './public/icons/skills/vscode-original.svg';
+import archi_screenshot from './public/icons/projects/archi_screenshot.png';
+import winh_screenshot from './public/icons/projects/winh_screenshot.jpg';
+import ther_screenshot from './public/icons/projects/ther_screenshot.png';
+import ytc2_screenshot from './public/icons/projects/ytc-2_screenshot.png'
 
 export const pageInfo = {
     name: "Michael Ojekunle",
@@ -145,6 +149,74 @@ export const experiences = [
 ]
 
 export const projects = [
+    {
+        title: "Youtube 2.0",
+        image: ytc2_screenshot,
+        linkToBuild: 'https://y-t-c-2.netlify.app',
+        summary: "Youtube 2.0, A Youtube Clone....",
+        technologies: [
+            {
+                image: react
+            },
+            {
+                image: materialui
+            },
+            {
+                image: css
+            },
+        ]
+    },
+    {
+        title: "Architect Website",
+        image: archi_screenshot,
+        linkToBuild: 'https://architect-website-nine.vercel.app',
+        summary: "Architet Website...",
+        technologies: [
+            {
+                image: html
+            },
+            {
+                image: css
+            },
+            {
+                image: javascript
+            },
+        ]
+    },
+    {
+        title: "Wine House",
+        image: winh_screenshot,
+        linkToBuild: 'https://wnh.netlify.app',
+        summary: "Wine House, So lovely",
+        technologies: [
+            {
+                image: html
+            },
+            {
+                image: css
+            },
+            {
+                image: javascript
+            },
+        ]
+    },
+    {
+        title: "The Road",
+        image: ther_screenshot,
+        linkToBuild: 'https://the-road-delta.vercel.app',
+        summary: "The Road, Travelling around the world, such wonder",
+        technologies: [
+            {
+                image: html
+            },
+            {
+                image: css
+            },
+            {
+                image: javascript
+            },
+        ]
+    },
 
 ]
 
