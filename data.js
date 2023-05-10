@@ -190,6 +190,11 @@ export const skills = [
         progress: 85,
     },
     {
+        image: mongodb,
+        title: "mongodb",
+        progress: 85 
+    },
+    {
         image: psql,
         title: "PostgreSql",
         progress: 80,
@@ -203,6 +208,56 @@ export const skills = [
         image: solidity,
         title: "Solidity",
         progress: 40
+    },
+    {
+        image: git,
+        title: "git",
+        progress: 90 
+    },
+    {
+        image: github,
+        title: "github",
+        progress: 90 
+    },
+    {
+        image: vscode,
+        title: "vscode",
+        progress: 90 
+    },
+    {
+        image: typescript,
+        title: "typescript",
+        progress: 75 
+    },
+    {
+        image: threejs,
+        title: "threejs",
+        progress: 60 
+    },
+    {
+        image: java,
+        title: "Java",
+        progress: 50 
+    },
+    {
+        image: figma,
+        title: "Figma",
+        progress: 85 
+    },
+    {
+        image: jquery,
+        title: "Jquery",
+        progress: 75 
+    },
+    {
+        image: redux,
+        title: "Redux",
+        progress: 80 
+    },
+    {
+        image: bootstrap,
+        title: "Bootstrap",
+        progress: 90 
     },
 ]
 
