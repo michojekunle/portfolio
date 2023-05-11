@@ -17,7 +17,7 @@ import { socials, skills, pageInfo, projects, experiences } from'../data';
 const Home = () => {
    
   return (
-    <div className="bg-[#242424] text-white h-screen overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80 snap snap-mandatory" style={{scrollBehavior: 'smooth'}}>
+    <div className="bg-[#242424] text-white h-screen snap snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80" style={{scrollBehavior: 'smooth'}}>
       <Head>
         <title>{pageInfo.name} || Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
@@ -56,7 +56,7 @@ const Home = () => {
       </section>
 
       <Link href='#hero'>
-        <div className="sticky bottom-5 left-2/4 -translate-x-2/4 rounded-full w-[45px] h-[45px] flex items-center justify-center animate-pulse  text-[#f7a52a] bg-slate-700/50">
+        <div className="sticky bottom-5 cursor-pointer left-2/4 -translate-x-2/4 rounded-full w-[45px] h-[45px] flex items-center justify-center animate-pulse  text-[#f7a52a] bg-slate-700/50">
           <i className="fas fa-arrow-up text-[16px] mt-[5px]"></i>
         </div>
       </Link>

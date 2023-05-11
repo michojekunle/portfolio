@@ -34,11 +34,11 @@ const Projects = ({ projects }: Props) => {
                 opacity: 1
               }}
               viewport={{once: true}}
+              className="max-h-[350px] md:max-h-[400px] w-[300px] md:w-[480px] lg:w-[580px]"
             >
               <Image
                 src={project.image}
                 alt='image two'
-                className="max-h-[550px]"
               />
             </motion.div>
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
