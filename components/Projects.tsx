@@ -45,7 +45,7 @@ const Projects = ({ projects }: Props) => {
             </motion.div>
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold'>
-                <Link href={project.linkToBuild} className='underline decoration-[#F7A52A]/50 '>Case Study {idx + 1} of {projects.length}</Link>: {project?.title} 
+                <a href={project.linkToBuild} className='underline decoration-[#F7A52A]/50'>Case Study {idx + 1} of {projects.length}</a>: {project?.title} 
               </h4>
               <div className='flex items-center space-x-2 justify-center'>
                 {project?.technologies.map((technology, i) => (
