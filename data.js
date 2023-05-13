@@ -69,7 +69,7 @@ export const experiences = [
             'Demonstrated Ability to manage multiple tasks while remaining adaptable and flexible.',
             'Committed to delivering excellent customer service while working in a fast paced environment.',
             'Collaborated with web content editors to facilitate website maintenance.',
-            'Leveraging Mastery of Web Technologies such as HTML, CSS and JavaScript to build top quality code for diverse projects.',
+            'Leveraging Mastery of Web Technologies to build top quality code for diverse projects.',
         ]
     },
     {
@@ -152,7 +152,7 @@ export const projects = [
     {
         title: "Youtube 2.0",
         image: ytc2_screenshot,
-        linkToBuild: 'https://y-t-c-2.netlify.app',
+        linkToBuild: 'https://ytc-2.netlify.app',
         summary: "Youtube 2.0, A Youtube Clone....",
         technologies: [
             {
