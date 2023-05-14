@@ -166,6 +166,71 @@ export const projects = [
             },
         ]
     },
+     {
+        title: "Bookmark Landing Page",
+        image: archi_screenshot,
+        linkToBuild: 'https://architect-website-nine.vercel.app',
+        summary: "Bookmark Landing Page, smooth UI and UX...",
+        technologies: [
+            {
+                image: html
+            },
+            {
+                image: css
+            },
+            {
+                image: javascript
+            },
+        ]
+    },
+     {
+        title: "Shortly",
+        image: archi_screenshot,
+        linkToBuild: 'https://shtly.netlify.app',
+        summary: "Shortly: a url shortener...",
+        technologies: [
+            {
+                image: react
+            },
+            {
+                image: css
+            },
+        ]
+    },
+    {
+        title: "Architect Website",
+        image: archi_screenshot,
+        linkToBuild: 'https://architect-website-nine.vercel.app',
+        summary: "Architet Website...",
+        technologies: [
+            {
+                image: html
+            },
+            {
+                image: css
+            },
+            {
+                image: javascript
+            },
+        ]
+    },
+    {
+        title: "Architect Website",
+        image: archi_screenshot,
+        linkToBuild: 'https://architect-website-nine.vercel.app',
+        summary: "Architet Website...",
+        technologies: [
+            {
+                image: html
+            },
+            {
+                image: css
+            },
+            {
+                image: javascript
+            },
+        ]
+    },
     {
         title: "Architect Website",
         image: archi_screenshot,
@@ -217,6 +282,7 @@ export const projects = [
             },
         ]
     },
+
 
 ]
 
