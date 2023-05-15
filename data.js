@@ -198,10 +198,24 @@ export const projects = [
         ]
     },
     {
-        title: "Architect Website",
+        title: "Where In The World",
         image: archi_screenshot,
-        linkToBuild: 'https://architect-website-nine.vercel.app',
-        summary: "Architet Website...",
+        linkToBuild: 'https://wiit-w.netlify.app',
+        summary: "Wherever in the world, you can explore...",
+        technologies: [
+            {
+                image: react
+            },
+            {
+                image: css
+            },
+        ]
+    },
+    {
+        title: "D G R",
+        image: archi_screenshot,
+        linkToBuild: 'https://d-g-r.netlify.app',
+        summary: "D G R Real Estate agency ...",
         technologies: [
             {
                 image: html
@@ -215,36 +229,16 @@ export const projects = [
         ]
     },
     {
-        title: "Architect Website",
+        title: "Task Manager",
         image: archi_screenshot,
-        linkToBuild: 'https://architect-website-nine.vercel.app',
-        summary: "Architet Website...",
+        linkToBuild: 'https://task-manager-amd.netlify.app',
+        summary: "Simplified Task Management application for keeping track of all your tasks...",
         technologies: [
             {
-                image: html
+                image: react
             },
             {
                 image: css
-            },
-            {
-                image: javascript
-            },
-        ]
-    },
-    {
-        title: "Architect Website",
-        image: archi_screenshot,
-        linkToBuild: 'https://architect-website-nine.vercel.app',
-        summary: "Architet Website...",
-        technologies: [
-            {
-                image: html
-            },
-            {
-                image: css
-            },
-            {
-                image: javascript
             },
         ]
     },
