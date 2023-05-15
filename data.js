@@ -169,7 +169,7 @@ export const projects = [
      {
         title: "Bookmark Landing Page",
         image: archi_screenshot,
-        linkToBuild: 'https://architect-website-nine.vercel.app',
+        linkToBuild: 'https://bookmark-landing-page-amd.netlify.app',
         summary: "Bookmark Landing Page, smooth UI and UX...",
         technologies: [
             {
