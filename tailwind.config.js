@@ -1,4 +1,3 @@
-
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,5 +6,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [ require('tailwind-scrollbar'), ],
+  plugins: [ require('tailwind-scrollbar')({ nocompatible: true }), ],
 }
