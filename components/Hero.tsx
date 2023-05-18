@@ -22,9 +22,9 @@ const Hero = ({ pageInfo }: Props) => {
         delaySpeed: 2000
     })
   return (
-    <div className='h-screen flex flex-col justify-center items-center space-y-8 overflow-hidden text-center'>
+    <div className='h-screen flex flex-col justify-center items-center space-y-5 md:space-y-8 overflow-hidden text-center'>
         <BackgroundCircles/>
-        <div className="relative w-32 h-32 md:w-36 md:h-36">
+        <div className="relative w-32 h-32 mt-[-67px] md:mt-0 md:w-36 md:h-36">
             <Image
                 src={pageInfo.heroImage}
                 alt="AMD'S IMAGE"
