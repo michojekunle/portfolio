@@ -10,7 +10,6 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 
-import { PageInfo, Social, Experience, Skill, Project } from '../typings';
 import { socials, skills, pageInfo, projects, experiences } from'../data';
 
 
