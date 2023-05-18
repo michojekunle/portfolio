@@ -15,7 +15,6 @@ import { socials, skills, pageInfo, projects, experiences } from'../data';
 
 
 const Home = () => {
-   
   return (
     <div className="bg-[#242424] text-white h-screen snap snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80" style={{scrollBehavior: 'smooth'}}>
       <Head>

@@ -10,7 +10,7 @@ type Props = {
 
 const Header = ({ socials }: Props) => {
   return (
-    <div className='w-full sticky top-0 bg-[#242424] z-40'>
+    <div className='w-full md:sticky top-0 bg-[#242424] z-40'>
       <header className='bg-[#242424] flex flex-row items-start justify-between p-5 mx-auto max-w-7xl xl:item-center z-20'>
         {/* Social Icons */}
         <motion.div 
