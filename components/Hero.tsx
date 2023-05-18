@@ -24,19 +24,18 @@ const Hero = ({ pageInfo }: Props) => {
   return (
     <div className='h-screen flex flex-col justify-center items-center space-y-8 overflow-hidden text-center'>
         <BackgroundCircles/>
-        
-        <div className="relative w-36 h-36">
+        <div className="relative w-32 h-32 md:w-36 md:h-36">
             <Image
                 src={pageInfo.heroImage}
                 alt="AMD'S IMAGE"
-                className="relative rounded-full mx-auto object-cover "        
+                className="relative rounded-full mx-auto object-cover"
                 layout="fill"
             />
         </div>
 
         <div className='text-center'>
             <h2 className='text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[8px] md:tracking-[15px] leading-8' >{pageInfo.role}</h2>
-            <h1 className="text-4xl z-10 md:text-5xl lg:text-6xl font-semibold px-10 text-center md:max-w-[550px]">
+            <h1 className="text-2xl sm:text-4xl z-10 md:text-5xl lg:text-6xl font-semibold px-10 text-center md:max-w-[550px]">
                 <span className="mt-3">{text}</span>
                 <Cursor cursorColor="#F7A52A"/>
             </h1>
