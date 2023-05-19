@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { Experience } from '../typings';
-import { urlFor } from '../sanity';
 import Image from 'next/image';
 
 type Props = {
@@ -18,17 +17,17 @@ const ExperienceCard = ({ experience }: Props) => {
           viewport={{once: true }}
           className='relative w-[80px] h-[80px] flex items-center justify-center rounded-full xl:w-[200px] xl:h-[200px]'
         >
-          <Image 
+          <Image
               src ={experience.companyImage}
               alt='Image Illustration'
-          /> 
+          />
         </motion.div>
         <div className='px-0 md:px-10'>
           <h4 className='text-4xl'>{experience.jobTitle}</h4>
           <p className='font-bold text-2xl mt-1'>{experience.company}</p>
           <div className='flex space-x-5 my-5'>
             {experience.technologies.map((technology, i) => (
-              <Image 
+              <Image
                 key={i}
                 className='h-10 w-10'
                 src={technology.image}
@@ -36,8 +35,8 @@ const ExperienceCard = ({ experience }: Props) => {
                 height={28}
               />
             ))}
-          </div> 
-          <p className='upercase py-5 text-gray-300'>
+          </div>
+          <p className='uppercase py-5 text-gray-300'>
             {new Date(experience.dateStarted).toDateString()} - {" "} {experience.isCurrentlyWorkingHere ? "Present" : new Date(experience.dateEnded).toDateString()}
           </p>
 

@@ -1,9 +1,7 @@
 import React from 'react'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
-import fvc from '../public/favicon.ico'
 import { PageInfo } from '../typings'
-import { urlFor } from '../sanity'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import Image from 'next/image'
 
