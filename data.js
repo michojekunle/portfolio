@@ -36,7 +36,7 @@ export const pageInfo = {
     name: "Michael Ojekunle",
     role: "Full Stack Web Developer",
     heroImage: profilePic,
-    backgroundInformation: "Hello, My Name's Michael and I'm a Full Stack Web Developer.",
+    backgroundInformation: "Hello, My Name's Michael and I'm a Full Stack Web Developer. I am an Enthusiatic, curious and imaginative Web Developer, eager to contribute to team success through hard work, Attention to detail and Excellent Organizational Skills, always open to new and unconventional ideas. I take my work as a Web Developer seriously and this means I always ensure my skills are kept up to date within this rapidly changing industry.  I am a positive, enthusiastic and competent Web Developer who, over the years, has built up a diverse range of skills, qualities and attributes that guarantee I will perform highly in this role. . If you hire me as your Web Developer, I assure you I will fit into your team quickly, I will always put the commercial needs of your business at the forefront of everything I do, and the work I carry out will be consistent to a first-class standard.",
     profilePic: heroImage,
     phoneNumber: "+2349045156850",
     email: "michojekunle1@gmail.com",
