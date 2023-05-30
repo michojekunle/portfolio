@@ -38,6 +38,7 @@ const About = ({ pageInfo }: Props) => {
           <Image
               src={pageInfo.profilePic}
               alt="AMD'S IMAGE"
+              plcaeholder='blur'
               layout='responsive'
           />
         </motion.div>
