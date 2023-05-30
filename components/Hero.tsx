@@ -26,6 +26,7 @@ const Hero = ({ pageInfo }: Props) => {
             <Image
                 src={pageInfo.heroImage}
                 alt="AMD'S IMAGE"
+                placeholder='blur'
                 className="relative rounded-full mx-auto object-cover"
                 layout="fill"
             />
