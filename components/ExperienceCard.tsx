@@ -31,6 +31,7 @@ const ExperienceCard = ({ experience }: Props) => {
               <Image
                 key={i}
                 className='h-10 w-10'
+                alt="tech"
                 src={technology.image}
                 placeholder='blur'
                 width={28}

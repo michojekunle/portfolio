@@ -19,6 +19,11 @@ const Home = () => {
       <Head>
         <title>{pageInfo.name} || Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+        <meta name="description" content={`Learn more about Michael Ojekunle`} />
+        <meta property="og:title" content={`Michael Ojekunle`} />
+        <meta property="og:description" content={`Learn more about Michael Ojekunle`} />
+        <meta property="og:url" content={`https://michaelojekunle.vercel.app`} />
+        <meta property="og:type" content="website" />
       </Head>
 
       <Header socials={socials}/>
