@@ -38,6 +38,7 @@ const About = ({ pageInfo }: Props) => {
           <Image
               src={pageInfo.profilePic}
               alt="AMD'S IMAGE"
+              placeholder='blur'
               layout='responsive'
           />
         </motion.div>
@@ -60,7 +61,7 @@ const About = ({ pageInfo }: Props) => {
           <h4 className='text-2xl md:text-4xl font-semibold'>
             Here is a <span className='underline decoration-[#f7A34a]'>Little</span> Background
           </h4>
-          <p className='text-base'>{pageInfo?.backgroundInformation}</p>
+          <p className='leading-[28px] md:text-lg sm:text-md text-base'>{pageInfo?.backgroundInformation}</p>
         </motion.div>
 
     </motion.div>

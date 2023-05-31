@@ -41,6 +41,7 @@ const Projects = ({ projects }: Props) => {
               <Image
                 src={project.image}
                 alt='image two'
+                placeholder='blur'
               />
             </motion.div>
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
@@ -49,7 +50,7 @@ const Projects = ({ projects }: Props) => {
               </h4>
               <div className='flex items-center space-x-2 justify-center'>
                 {project?.technologies.map((technology, i) => (
-                  <Image className='h-10 w-10' key={i} src={technology.image} alt="class" layout="responsive"/>
+                  <Image className='h-10 w-10' key={i} src={technology.image} alt="class" placeholder='blur' layout="responsive"/>
                 ))}
               </div>
 

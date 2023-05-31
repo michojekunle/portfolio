@@ -20,6 +20,7 @@ const ExperienceCard = ({ experience }: Props) => {
           <Image
               src ={experience.companyImage}
               alt='Image Illustration'
+              placeholder='blur'
           />
         </motion.div>
         <div className='px-0 md:px-10'>
@@ -31,6 +32,7 @@ const ExperienceCard = ({ experience }: Props) => {
                 key={i}
                 className='h-10 w-10'
                 src={technology.image}
+                placeholder='blur'
                 width={28}
                 height={28}
               />

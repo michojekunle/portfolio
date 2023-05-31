@@ -26,6 +26,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
             <Image
                 src={skill.image}
                 alt='soft work'
+                placeholder='blur'
                 className='cursor-pointer rounded-full object-fill w-16 h-16 md:w-20 md:h-20 filter group-hover:grayscale transition duration-300 ease-in-out bg-slate-800'
             />
         </div>
