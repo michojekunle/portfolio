@@ -13,7 +13,7 @@ const Header = ({ socials }: Props) => {
     <div className='w-full md:sticky top-0 bg-[#242424] z-40'>
       <header className='bg-[#242424] flex flex-row items-start justify-between p-5 mx-auto max-w-7xl xl:item-center z-20'>
         {/* Social Icons */}
-        <motion.div 
+        <motion.div
           initial ={{
             x: -500,
             opacity: 0,
@@ -30,7 +30,7 @@ const Header = ({ socials }: Props) => {
         >
           {socials.map((social, i) => (
             <SocialIcon
-              key={i} 
+              key={i}
               url={social.url}
               fgColor='grey'
               bgColor='transparent'
@@ -40,7 +40,7 @@ const Header = ({ socials }: Props) => {
         </motion.div>
 
         <Link href='#contact'>
-          <motion.div 
+          <motion.div
             className='flex flex-row cursor-pointer items-center'
             initial ={{
               x: 500,
@@ -56,7 +56,7 @@ const Header = ({ socials }: Props) => {
               duration: 1.5
             }}
           >
-            <SocialIcon 
+            <SocialIcon
               className='cursor-pointer w-8 h-8 md:w-11 md:h-11'
               network='email'
               fgColor='grey'
