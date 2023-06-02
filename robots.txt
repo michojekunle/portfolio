@@ -1,3 +1,4 @@
 User-Agent: *
 Allow: /
+Sitemap: https://midev.vercel.app/my_sitemap.xml
 
