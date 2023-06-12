@@ -107,12 +107,12 @@ export const experiences = [
         ],
     },
     {
-        jobTitle: "Full Stack Web Developer Instructor",
+        jobTitle: "Full Stack Web Developer Traineer",
         companyImage: cbc,
         company: "CBC Africa",
-        dateStarted:"2022-7-14",
-        dateEnded: "",
-        isCurrentlyWorkingHere: true,
+        dateStarted:"2022-05-09",
+        dateEnded: "2022-08-29",
+        isCurrentlyWorkingHere: false,
         technologies: [
             {
                 image: html, 
@@ -130,14 +130,14 @@ export const experiences = [
                 image: nodejs,
             },
             {
-                image: tailwindcss,
-            },
-            {
                 image: express,
             },
             {
                 image: psql,
-            }
+            },
+            {
+                image: mongodb,
+            },
         ],
         points: [
             'Wrote supporting code for web applications and websites.',
@@ -260,6 +260,23 @@ export const projects = [
         ]
     },
     {
+        title: "Architect Website",
+        image: archi_screenshot,
+        linkToBuild: 'https://architect-website-nine.vercel.app/',
+        summary: "Architect Website, Architecture & Interior Design",
+        technologies: [
+            {
+                image: html
+            },
+            {
+                image: css
+            },
+            {
+                image: javascript
+            },
+        ]
+    },
+    {
         title: "The Road",
         image: ther_screenshot,
         linkToBuild: 'https://the-road-delta.vercel.app',
@@ -276,8 +293,6 @@ export const projects = [
             },
         ]
     },
-
-
 ]
 
 export const skills = [
