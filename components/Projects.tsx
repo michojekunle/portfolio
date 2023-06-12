@@ -36,7 +36,8 @@ const Projects = ({ projects }: Props) => {
                 opacity: 1
               }}
               viewport={{once: true}}
-              className="max-h-[350px] md:max-h-[400px] w-[300px] md:w-[480px] lg:w-[580px]"
+              className="max-h-[350px] md:max-h-[400px] w-[300px] md:w-[480px] lg:w-[580px] cursor-pointer"
+              onClick={window.open(`${project.linkToBuild}`)}
             >
               <Image
                 src={project.image}
