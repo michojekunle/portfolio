@@ -29,8 +29,13 @@ import typescript from './public/icons/skills/typescript-original.svg';
 import vscode from './public/icons/skills/vscode-original.svg';
 import archi_screenshot from './public/icons/projects/archi_screenshot.png';
 import winh_screenshot from './public/icons/projects/winh_screenshot.jpg';
-import ther_screenshot from './public/icons/projects/ther_screenshot.png';
-import ytc2_screenshot from './public/icons/projects/ytc-2_screenshot.png'
+import ther_screenshot from './public/icons/projects/Youtube 2.0 - Google Chrome 6_12_2023 7_12_45 AM.png';
+import ytc2_screenshot from './public/icons/projects/Youtube 2.0 - Google Chrome 6_12_2023 7_12_45 AM.png'
+import bkmk_screenshot from './public/icons/project/Frontend Mentor _ Bookmark landing page - Google Chrome 6_1_2023 9_34_57 AM.png';
+import tskm_screenshot from './public/icons/projects/Youtube 2.0 - Google Chrome 6_12_2023 7_22_02 AM.png';
+import dgr_screenshot  from './public/icons/projects/Youtube 2.0 - Google Chrome 6_12_2023 7_16_23 AM.png';
+import witw_screenshot from './public/icons/projects/Youtube 2.0 - Google Chrome 6_12_2023 7_14_13 AM.png';
+import shty_screenshot from './public/icons/projects/Shortly URL shortening API - Google Chrome 5_30_2023 8_42_19 PM.png';
 
 export const pageInfo = {
     name: "Michael Ojekunle",
@@ -168,7 +173,7 @@ export const projects = [
     },
      {
         title: "Bookmark Landing Page",
-        image: archi_screenshot,
+        image: bkmk_screenshot,
         linkToBuild: 'https://bookmark-landing-page-amd.netlify.app',
         summary: "Bookmark Landing Page, smooth UI and UX...",
         technologies: [
@@ -185,7 +190,7 @@ export const projects = [
     },
      {
         title: "Shortly",
-        image: archi_screenshot,
+        image: shty_screenshot,
         linkToBuild: 'https://shtly.netlify.app',
         summary: "Shortly: a url shortener...",
         technologies: [
@@ -199,7 +204,7 @@ export const projects = [
     },
     {
         title: "Where In The World",
-        image: archi_screenshot,
+        image: witw_screenshot,
         linkToBuild: 'https://wiit-w.netlify.app',
         summary: "Wherever in the world, you can explore...",
         technologies: [
@@ -213,7 +218,7 @@ export const projects = [
     },
     {
         title: "D G R",
-        image: archi_screenshot,
+        image: dgr_screenshot,
         linkToBuild: 'https://d-g-r.netlify.app',
         summary: "D G R Real Estate agency ...",
         technologies: [
@@ -230,7 +235,7 @@ export const projects = [
     },
     {
         title: "Task Manager",
-        image: archi_screenshot,
+        image: tskm_screenshot,
         linkToBuild: 'https://task-manager-amd.netlify.app',
         summary: "Simplified Task Management application for keeping track of all your tasks...",
         technologies: [
