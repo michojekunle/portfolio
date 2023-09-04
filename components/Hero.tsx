@@ -34,7 +34,7 @@ const Hero = ({ pageInfo }: Props) => {
 
         <div className='text-center'>
             <h2 className='text-[9px] sm:text-xs md:text-sm uppercase text-gray-500 pb-2 tracking-[8px] md:tracking-[15px] leading-8' >{pageInfo.role}</h2>
-            <h1 className="text-2xl sm:text-4xl z-10 md:text-5xl lg:text-6xl font-semibold px-10 text-center md:max-w-[550px]">
+            <h1 className="text-2xl sm:text-3xl z-10 md:text-4xl font-semibold px-10 text-center md:max-w-[550px]">
                 <span className="mt-3">{text}</span>
                 <Cursor cursorColor="#F7A52A"/>
             </h1>
