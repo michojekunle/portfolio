@@ -20,7 +20,7 @@ const Hero = ({ pageInfo }: Props) => {
         delaySpeed: 2000
     })
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center space-y-5 md:space-y-8 overflow-hidden text-center'>
+    <div className='min-h-screen flex flex-col justify-center items-center space-y-5 md:space-y-8 overflow-hidden text-center py-11'>
         <BackgroundCircles/>
         <div className="relative w-32 h-32 md:mt-0 md:w-36 md:h-36">
             <Image
