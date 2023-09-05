@@ -21,12 +21,12 @@ function Contact({ pageInfo }: Props) {
   }
 
   return (
-    <div className='min-h-screen relative flex flex-col text-center md:text-left max-w-7xl md:flex-row px-10 justify-evenly mx-auto items-center'>
+    <div className='min-h-screen relative flex flex-col text-center md:text-left max-w-7xl w-full md:flex-row px-10 justify-evenly mx-auto items-center'>
         <h3 className=' uppercase md:tracking-[20px] text-gray-500 text-2xl text-center'>
           contact
         </h3>
         <div className="flex flex-col space-y-6 md:space-y-10">
-          <h4 className='text-xl md:text-4xl font-semibold text-center '>
+          <h4 className='text-lg sm:text-xl md:text-4xl font-semibold text-center '>
             I have got just what you need&nbsp;
             <span className='underline decoration-[#f7A52a]/50 '>Lets Talk</span>
           </h4>
@@ -53,7 +53,7 @@ function Contact({ pageInfo }: Props) {
             </div>
             <input {...register('subject')} className='contactInput' placeholder='Subject' type="text" />
             <textarea {...register('message')} className='contactInput' placeholder='Message'/>
-            <button type='submit' className='text-md md:text-lg py-3 px-6 md:py-5 md:px-10 rounded-md text-black font-bold bg-[#f7A52a]'>Submit</button>
+            <button type='submit' className='text-md md:text-lg py-2 px-4 md:py-4 md:px-8 rounded-md text-black font-bold bg-[#f7A52a]'>Submit</button>
           </form>
         </div>
     </div>
