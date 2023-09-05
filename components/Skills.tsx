@@ -13,8 +13,8 @@ const Skills = ({ skills }: Props) => {
       <h3 className='uppercase md:tracking-[20px] text-gray-500 text-2xl text-center'>
         skills
       </h3>
-      <h3 className='absolute top-20 uppercase tracking-[3px] text-gray-500 text-sm text-center'>Hover over a skill for current proficiency</h3>    
-      <div className='flex flex-wrap gap-5 mt-36 w-full sm:max-w-[320px] md:max-w-[400px]'>
+      <h3 className='uppercase tracking-[3px] text-gray-500 text-sm text-center'>Hover over a skill for current proficiency</h3>    
+      <div className='flex flex-wrap gap-4 md:gap-5 mt-36 w-full sm:w-[320px] md:w-[400px]'>
         {skills.slice(0, skills.length/2).map((skill, i) => (
           <Skill key={i} skill={skill}/>
         ))}
