@@ -18,7 +18,7 @@ const Projects = ({ projects }: Props) => {
       transition={{duration: 1.5}}
       className='h-screen relative flex items-center justify-center'
     >
-      <h3 className='absolute top-20 z-50 uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
+      <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
         Projects
       </h3>
 
