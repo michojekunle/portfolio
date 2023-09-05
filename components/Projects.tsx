@@ -16,9 +16,9 @@ const Projects = ({ projects }: Props) => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 1.5}}
-      className='h-screen relative flex items-center justify-center'
+      className='h-screen relative flex flex-col items-center justify-center'
     >
-      <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
+      <h3 className='uppercase md:tracking-[20px] text-gray-500 text-2xl text-center'>
         Projects
       </h3>
 
@@ -46,7 +46,7 @@ const Projects = ({ projects }: Props) => {
               />
             </motion.div>
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-              <h4 className='text-4xl font-semibold'>
+              <h4 className='text-xl sm:text-2xl md:text-4xl font-semibold'>
                 <a href={project.linkToBuild} className='underline decoration-[#F7A52A]/50'>Case Study {idx + 1} of {projects.length}</a>: {project?.title} 
               </h4>
               <div className='flex items-center space-x-2 justify-center'>

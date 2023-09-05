@@ -17,7 +17,7 @@ const About = ({ pageInfo }: Props) => {
       className='flex flex-col relative min-h-screen text-center md:text-left md:flex-row max-w-7xl px-14 py-8 justify-evenly mx-auto items-center'
 
  >
-        <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='uppercase md:tracking-[20px] text-gray-500 text-2xl'>
             About
         </h3>
         <motion.div
@@ -33,7 +33,7 @@ const About = ({ pageInfo }: Props) => {
             x: 0
           }}
           viewport={{once: true }}
-          className="relative -mb-20 md:mb-0 flex-shrink-0 w-44 h-44 sm:w-56 sm:h-56 rounded-full md:rounded-lg md:w-64 md:h-92 xl:w-[500px] xl:h-[600px] object-cover overflow-hidden"
+          className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full md:rounded-lg md:w-64 md:h-92 xl:w-[500px] xl:h-[600px] object-cover overflow-hidden"
         >
           <Image
               src={pageInfo.profilePic}
@@ -61,7 +61,7 @@ const About = ({ pageInfo }: Props) => {
           <h4 className='text-2xl md:text-4xl font-semibold'>
             Here is a <span className='underline decoration-[#f7A34a]'>Little</span> Background
           </h4>
-          <p className='leading-[28px] md:text-lg sm:text-md text-base'>{pageInfo?.backgroundInformation}</p>
+          <p className='leading-[24px] md:text-lg sm:text-md text-base'>{pageInfo?.backgroundInformation}</p>
         </motion.div>
 
     </motion.div>

@@ -22,7 +22,7 @@ function Contact({ pageInfo }: Props) {
 
   return (
     <div className='min-h-screen relative flex flex-col text-center md:text-left max-w-7xl md:flex-row px-10 justify-evenly mx-auto items-center'>
-        <h3 className=' uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
+        <h3 className=' uppercase md:tracking-[20px] text-gray-500 text-2xl text-center'>
           contact
         </h3>
         <div className="flex flex-col space-y-6 md:space-y-10">
