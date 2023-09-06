@@ -11,7 +11,7 @@ const About = ({ pageInfo }: Props) => {
 
   return (
     <div className='w-full'>
-      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center w-full'>
          About
       </h3>
       <motion.div
