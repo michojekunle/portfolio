@@ -13,7 +13,7 @@ const Projects = ({ projects }: Props) => {
 
   return (
     <div className='w-full'>
-      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center mt-11'>
+      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-xl md:text-2xl text-center mt-11'>
         Projects
       </h3>
 

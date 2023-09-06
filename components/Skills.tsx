@@ -10,7 +10,7 @@ type Props = {
 const Skills = ({ skills }: Props) => {
   return (
     <div className='w-full'>
-      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center mt-11'>
+      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-xl md:text-2xl text-center mt-11'>
         skills
       </h3>
       <h3 className='mt-5 mb-11 uppercase tracking-[3px] text-gray-500 text-sm text-center'>Hover over a skill for current proficiency</h3>    

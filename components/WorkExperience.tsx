@@ -10,7 +10,7 @@ type Props = {
 const WorkExperience = ({ experiences }: Props) => {
   return (
     <div className='w-full'>
-      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center'>
+      <h3 className='uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-xl md:text-2xl text-center'>
           Experience
       </h3>
       <div className='min-h-screen flex relative w-full overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center '>
