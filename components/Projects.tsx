@@ -54,7 +54,7 @@ const Projects = ({ projects }: Props) => {
                   {project?.technologies.map((technology, i) => <Image className='h-10 w-10' key={i} src={technology?.image} alt="technology" placeholder='blur' layout="responsive" width={28} height={28}/>)}
                 </div>
 
-                <p className='text-sm opacity-75 md:text-md text-center md:text-left'>{project?.summary}</p>
+                <p className='text-sm opacity-75 md:text-md text-center md:text-left mb-11'>{project?.summary}</p>
               </div>
             </div>
           ))}
