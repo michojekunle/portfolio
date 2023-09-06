@@ -18,7 +18,7 @@ const About = ({ pageInfo }: Props) => {
         initial={{ opacity:0 }}
         whileInView={{ opacity:1 }}
         transition={{duration: 1.5}}
-        className='flex flex-col relative h-screen max-h-[862px] text-center md:text-left md:flex-row max-w-7xl px-14 py-8 justify-evenly mx-auto items-center w-full'
+        className='flex flex-col relative h-screen max-h-[650px] text-center md:text-left md:flex-row max-w-7xl px-14 py-8 justify-evenly mx-auto items-center w-full'
       >
           <motion.div
             initial={{
