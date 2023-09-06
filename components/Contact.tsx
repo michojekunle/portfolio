@@ -22,7 +22,7 @@ function Contact({ pageInfo }: Props) {
 
   return (
     <div className='w-full'>
-      <h3 className=' uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center'>
+      <h3 className=' uppercase tracking-[15px] md:tracking-[20px] text-gray-500 text-2xl text-center mt-11'>
         contact
       </h3>
       <div className='min-h-screen relative flex flex-col text-center md:text-left max-w-7xl w-full md:flex-row px-10 justify-evenly mx-auto items-center'>
