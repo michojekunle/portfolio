@@ -58,7 +58,7 @@ const About = ({ pageInfo }: Props) => {
             viewport={{once: true }}
             className='space-y-5 md:space-y-10 px-4 md:px-10 w-full'
           >
-            <h4 className='mt-5 text-2xl md:text-4xl font-semibold opacity-75 w-full'>
+            <h4 className='mt-5 md:mt-0 text-2xl md:text-4xl font-semibold opacity-75 w-full'>
               Here is a <span className='underline decoration-[#f7A34a]'>Little</span> Background
             </h4>
             <p className='leading-[35px] md:text-lg sm:text-md text-base opacity-50 w-full'>{pageInfo?.backgroundInformation}</p>
