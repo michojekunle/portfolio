@@ -13,12 +13,12 @@ const Skill = ({ directionLeft, skill }: Props) => {
   return (
     <motion.div 
         className='group relative flex cursor-pointer'
-        initial={{
-            x: directionLeft ? -200 : 200,
-            opacity: 0
-        }}
-        transition={{duration:1}}
-        whileInView={{opacity:1, x:0}}
+        // initial={{
+        //     x: directionLeft ? -200 : 200,
+        //     opacity: 0
+        // }}
+        // transition={{duration:1}}
+        // whileInView={{opacity:1, x:0}}
     >
         <div className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24'>
             <Image
