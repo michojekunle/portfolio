@@ -20,9 +20,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
         transition={{duration:1}}
         whileInView={{opacity:1, x:0}}
     >
-        <div 
-            className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24'
-        >
+        <div className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24'>
             <Image
                 src={skill.image}
                 alt='soft work'
@@ -37,7 +35,6 @@ const Skill = ({ directionLeft, skill }: Props) => {
                 <p className='font-bold text-gray-100 opacity-100 text-2xl'>{skill.progress}%</p>
             </div>
         </div>
-        
     </motion.div>
   )
 }
