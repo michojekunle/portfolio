@@ -21,7 +21,7 @@ const Projects = ({ projects }: Props) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1.5}}
-        className='min-h-screen relative flex flex-col items-center justify-center'
+        className='py-11 relative flex flex-col items-center justify-center'
       >
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-rounded-[12px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80'>
           {projects.map((project, idx) => (
@@ -56,7 +56,6 @@ const Projects = ({ projects }: Props) => {
 
                 <p className='text-md opacity-75 md:text-lg text-center md:text-left'>{project?.summary}</p>
               </div>
-
             </div>
           ))}
         </div>
