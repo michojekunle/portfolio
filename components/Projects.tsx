@@ -50,9 +50,7 @@ const Projects = ({ projects }: Props) => {
                 <a href={project.linkToBuild} className='underline decoration-[#F7A52A]/50 w-full'>Case Study {idx + 1} of {projects.length}</a>: {project?.title} 
               </h4>
               <div className='flex items-center space-x-2 justify-center'>
-                {project?.technologies.map((technology, i) => (
-                  <Image className='h-10 w-10' key={i} src={technology?.image} alt="class" placeholder='blur' layout="responsive"/>
-                ))}
+                {project?.technologies.map((technology, i) => <Image className='h-10 w-10' key={i} src={technology?.image} alt="technology" placeholder='blur' layout="responsive" width={28} height={28}/>)}
               </div>
 
               <p className='text-md opacity-75 md:text-lg text-center md:text-left'>{project?.summary}</p>
