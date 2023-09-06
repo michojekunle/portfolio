@@ -7,11 +7,9 @@ type Props = {
     skill: Skill;
 }
 
-const Skill = ({ directionLeft, skill }: Props) => {
+const Skill = ({ skill }: Props) => {
   return (
-    <motion.div 
-        className='group relative flex cursor-pointer'
-    >
+    <motion.div className='group relative flex cursor-pointer'>
         <div className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24'>
             <Image
                 src={skill.image}
