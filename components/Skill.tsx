@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import { Skill } from '../typings';
@@ -10,21 +9,9 @@ type Props = {
 }
 
 const Skill = ({ directionLeft, skill }: Props) => {
-    const [isMobile, setIsMobile] = useState(false);
-    useEffect(() => {
-        if (window.innerWidth < 700) {
-            setIsMobile(true);
-        }
-    }, []);
   return (
     <motion.div 
         className='group relative flex cursor-pointer'
-        initial={{
-            x: isMobile ? 0 : (directionLeft ? -200 : 200),
-            opacity: isMobile ? 1 : 0
-        }}
-        transition={{duration:1}}
-        whileInView={{opacity:1, x:0}}
     >
         <div className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24'>
             <Image
