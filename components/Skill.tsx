@@ -4,7 +4,6 @@ import { Skill } from '../typings';
 import { urlFor } from '../sanity';
 
 type Props = {
-    directionLeft?: boolean;
     skill: Skill;
 }
 
