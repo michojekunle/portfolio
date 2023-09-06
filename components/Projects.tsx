@@ -25,7 +25,7 @@ const Projects = ({ projects }: Props) => {
       >
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-rounded-[12px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80'>
           {projects.map((project, idx) => (
-            <div key={idx} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-11 md:p-20 lg:p-44 h-screen max-h-[1024px]'>
+            <div key={idx} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-11 md:p-20 lg:p-44 h-screen max-h-[862px]'>
               <motion.div
                 initial={{
                   y: -300,
