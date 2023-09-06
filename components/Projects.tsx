@@ -37,7 +37,7 @@ const Projects = ({ projects }: Props) => {
                   opacity: 1
                 }}
                 viewport={{once: true}}
-                className="max-h-[350px] md:max-h-[400px] w-[300px] md:w-[480px] lg:w-[580px] cursor-pointer"
+                className="max-h-[350px] md:max-h-[400px] w-[300px] md:w-[480px] lg:w-[580px] cursor-pointer pb-11"
                 onClick={() => window.open(`${project.linkToBuild}`)}
               >
                 <Image
@@ -46,7 +46,7 @@ const Projects = ({ projects }: Props) => {
                   placeholder='blur'
                 />
               </motion.div>
-              <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+              <div className='space-y-10 px-0 md:px-10 max-w-6xl pb-11'>
                 <h4 className='text-xl sm:text-2xl md:text-4xl font-semibold w-full'>
                   <a href={project.linkToBuild} className='underline decoration-[#F7A52A]/50 w-full'>Case Study {idx + 1} of {projects.length}</a>: {project?.title} 
                 </h4>
@@ -54,7 +54,7 @@ const Projects = ({ projects }: Props) => {
                   {project?.technologies.map((technology, i) => <Image className='h-10 w-10' key={i} src={technology?.image} alt="technology" placeholder='blur' layout="responsive" width={28} height={28}/>)}
                 </div>
 
-                <p className='text-md opacity-75 md:text-lg text-center md:text-left'>{project?.summary}</p>
+                <p className='text-sm opacity-75 md:text-md text-center md:text-left'>{project?.summary}</p>
               </div>
             </div>
           ))}

@@ -44,7 +44,7 @@ function Contact({ pageInfo }: Props) {
 
               <div className='flex items-center space-x-5'>
                 <MapPinIcon className='text-[#f7A52a] w-5 h-5 md:h-7 md:w-7 animate-pulse'/>
-                <p className='text-md sm:text-lg md:text-2xl'>{pageInfo.address}</p>
+                <p className='text-sm sm:text-md md:text-xl'>{pageInfo.address}</p>
               </div>
             </div>
             <form className='flex flex-col space-y-2 w-full mx-auto' onSubmit={handleSubmit(onSubmit)}>
