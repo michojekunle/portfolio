@@ -27,7 +27,7 @@ const WorkExperience = ({ experiences }: Props) => {
                 x: 0
               }}
               viewport={{once: true }}
-            className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80'
+            className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-thin scrollbar-rounded-[12px] scrollbar-track-gray-400/20 scrollbar-thumb-[#F7A52A]/80'
         >
             {experiences.map((experience, i) => <ExperienceCard key={i} experience={experience}/>)}
         </motion.div>
