@@ -61,7 +61,7 @@ const About = ({ pageInfo }: Props) => {
             <h4 className='mt-5 md:mt-0 text-md md:text-4xl font-semibold opacity-75 w-full mb-4'>
               Here is a <span className='underline decoration-[#f7A34a]'>Little</span> Background
             </h4>
-            <p className='leading-[35px] md:text-lg sm:text-md text-xs opacity-50 w-full'>{pageInfo?.backgroundInformation}</p>
+            <p className='leading-[25px] md:leading-[35px] md:text-lg sm:text-md text-xs opacity-50 w-full'>{pageInfo?.backgroundInformation}</p>
           </motion.div>
       </motion.div>
     </div>
