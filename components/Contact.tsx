@@ -28,21 +28,21 @@ function Contact({ pageInfo }: Props) {
       <div className='py-11 relative flex flex-col text-center md:text-left max-w-7xl w-full md:flex-row px-10 justify-evenly mx-auto items-center'>
           <div className="flex flex-col space-y-6 md:space-y-10 mt-0">
             <h4 className='text-md sm:text-lg md:text-3xl font-semibold text-center'>
-              I have got just what you need&nbsp;
+              I've got just what you need,&nbsp;
               <span className='underline decoration-[#f7A52a]/50 '>Lets Talk</span>
             </h4>
-            <div className='flex flex-col space-y-7 md:space-y-10 items-center justify-center'>
-              <div className='flex items-center space-x-5'>
+            <div className='flex flex-col space-y-5 sm:space-y-7 md:space-y-10 items-center justify-center'>
+              <div className='flex items-center space-x-3 md:space-x-5'>
                 <PhoneIcon className='text-[#f7A52a] w-5 h-5 md:h-7 md:w-7 animate-pulse'/>
                 <p className='text-sm sm:text-md md:text-xl'>{pageInfo.phoneNumber}</p>
               </div>
 
-              <div className='flex items-center space-x-5'>
+              <div className='flex items-center space-x-3 md:space-x-5'>
                 <EnvelopeIcon className='text-[#f7A52a] w-5 h-5 md:h-7 md:w-7 animate-pulse'/>
                 <p className='text-sm sm:text-md md:text-xl'>{pageInfo.email}</p>
               </div>
 
-              <div className='flex items-center space-x-5'>
+              <div className='flex items-center space-x-3 md:space-x-5'>
                 <MapPinIcon className='text-[#f7A52a] w-5 h-5 md:h-7 md:w-7 animate-pulse'/>
                 <p className='text-sm sm:text-md md:text-xl'>{pageInfo.address}</p>
               </div>
