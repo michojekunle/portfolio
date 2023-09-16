@@ -112,7 +112,7 @@ export const experiences = [
         ],
     },
     {
-        jobTitle: "Full Stack Web Developer Traineer",
+        jobTitle: "Full Stack Web Developer Trainee",
         companyImage: cbc,
         company: "CBC Africa",
         dateStarted:"2022-05-09",
