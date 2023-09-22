@@ -1,5 +1,5 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons'  //Impotring Rect-Social-Icons
+import { SocialIcon } from 'react-social-icons'  //Importing React-Social-Icons
 import { motion } from "framer-motion" // Importing Framer motion
 import Link from 'next/link'; //import next/link
 import { Social } from '../typings';
