@@ -18,7 +18,7 @@ const About = ({ pageInfo }: Props) => {
         initial={{ opacity:0 }}
         whileInView={{ opacity:1 }}
         transition={{duration: 1.5}}
-        className='flex flex-col relative h-screen max-h-[600px] md:max-h-[862px] text-center md:text-left md:flex-row max-w-7xl px-14 py-8 justify-evenly mx-auto items-center w-full'
+        className='flex flex-col relative min-h-screen max-h-[720px] md:max-h-[862px] text-center md:text-left md:flex-row max-w-7xl px-14 py-8 justify-evenly mx-auto items-center w-full'
       >
           <motion.div
             initial={{
@@ -33,7 +33,7 @@ const About = ({ pageInfo }: Props) => {
               x: 0
             }}
             viewport={{once: true }}
-            className="relative my-8 w-44 h-44 sm:w-56 sm:h-56 rounded-full md:rounded-lg md:w-64 md:h-92 xl:w-[500px] xl:h-[600px] object-cover overflow-hidden"
+            className="my-8 w-44 h-44 sm:w-56 sm:h-56 rounded-full md:rounded-lg md:w-64 md:h-92 xl:w-[500px] xl:h-[600px] object-cover overflow-hidden"
           >
             <Image
                 src={pageInfo.profilePic}
